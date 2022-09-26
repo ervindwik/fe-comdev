@@ -1,8 +1,13 @@
 import React from 'react';
+import NavbarComp from '../Components/Navbar';
 
 const Dashboard = () => {
-    return(
-        <h1>ini dashboard</h1>
+    return (
+        <div>
+            <NavbarComp />
+            <h1>ini dashboard</h1>
+        </div>
+
     )
 }
 
