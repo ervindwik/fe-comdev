@@ -5,7 +5,7 @@ const Dashboard = () => {
     return (
         <div>
             <NavbarComp />
-            <h1>ini dashboard</h1>
+            <h1 style={{marginTop: '1000px'}}>ini dashboard</h1>
         </div>
 
     )
