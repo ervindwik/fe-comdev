@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row, Table } from 'react-bootstrap';
-import Logo from "../assets/logoNav.png";
+import comdev from "../assets/comdev.png";
 import "../Styles/Footer.css";
 import instagram from "../assets/ig.png";
 import twitter from "../assets/tw.png";
@@ -13,28 +13,26 @@ const Footer = () => {
     return (
         <React.Fragment>
             <hr className='line-horizontal'></hr>
-            <div className='footer'>
+            <div className='footer-section'>
                 <Container>
                     <Row>
-                        <Col xs="auto">
-                            <img src={Logo} className="logo-footer" />
-                        </Col>
-                        <Col xs={4}>
-                            <h5>Comdev Institute</h5>
+                        <Col>
+                            <img src={comdev} className="comdev" />
                         </Col>
                     </Row>
                     <Row>
-                        <Col className="col-md-6">
+                        <Col className="col-md-4">
                             <br />
                             <Table className="table-content table-borderless">
                                 <tr>
                                     <td>
                                         <ul>
-                                            <li><a href="" className="text-black">Tentang Kami</a></li>
-                                            <li><a href="" className="text-black">Bantuan</a></li>
+                                            <li><a href="#tentangkami" className="text-black">Tentang Kami</a></li>
+                                            <li><a href="#bantuan" className="text-black">Bantuan</a></li>
                                         </ul>
                                     </td>
                                 </tr>
+                                <br />
                                 <tr>
                                     <Row>
                                         <Col className="col-md-2">
@@ -47,7 +45,7 @@ const Footer = () => {
                                             <a href="#facebook"><img alt="linkedin" src={linkedin} width="40" height="35" /></a>
                                         </Col>
                                         <Col className="col-md-2">
-                                            <a href="#facebook"><img alt="youtube" src={youtube} width="60" height="35" /></a>
+                                            <a href="#facebook"><img alt="youtube" src={youtube} width="45" height="35" /></a>
                                         </Col>
                                         <Col className="col-md-2">
                                             <a href="#facebook"><img alt="facebook" src={facebook} width="20" height="35" /></a>
@@ -55,21 +53,18 @@ const Footer = () => {
                                     </Row>
                                 </tr>
                                 <br />
-                                <tr>
-                                    <td>
-                                        &#169; 2022 Comdev Institute. All Rights Reserved
-                                    </td>
-                                </tr>
+
                             </Table>
                         </Col>
                         <Col className="col-md-6">
+                            <br />
                             <Table className="table-content table-borderless">
                                 <tr>
-                                    <td scope="row">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, molestiae eos porro iste voluptas vitae, sed optio molestias nostrum debitis at cum odio quaerat eveniet voluptatibus quasi voluptatum officiis. Ipsa!</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, molestiae eos porro iste voluptas vitae, sed optio molestias nostrum debitis at cum odio quaerat eveniet voluptatibus quasi voluptatum officiis. Ipsa!</td>
                                 </tr>
                                 <br />
                                 <tr>
-                                    <td scope="row">Cooming Soon</td>
+                                    <td><h5>Cooming Soon</h5></td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -77,6 +72,11 @@ const Footer = () => {
                                     </td>
                                 </tr>
                             </Table>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col className="copyright col-md-4">
+                            &#169; 2022 Comdev Institute. All Rights Reserved
                         </Col>
                     </Row>
                 </Container>
