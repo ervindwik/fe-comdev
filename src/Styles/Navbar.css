@@ -52,7 +52,7 @@
   }
 
   .oldGreen{
-    background-color: #38A5AD;
+    background-color: #38A5AD !important;
   }
   @media (min-width: 992px) {
     .searchBar{

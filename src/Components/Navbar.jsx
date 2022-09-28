@@ -49,7 +49,7 @@ const NavbarComp = (props) => {
                         <Nav.Link href="#" className="btn btn-outline-dark px-4">
                             Masuk
                         </Nav.Link>
-                        <Nav.Link href="#" className="btn btn-success text-white px-4">
+                        <Nav.Link href="#" className="btn oldGreen text-white px-4">
                             Daftar
                         </Nav.Link>
                     </Nav>
