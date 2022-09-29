@@ -1,0 +1,67 @@
+.navigasi {
+    margin-top: 8%;
+}
+
+#btn-profile {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #38A5AD;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+.me-auto #btn-password {
+    font-weight: bold;
+    color: #000;
+}
+
+.line-style {
+    background-color: #000;
+    border: none;
+    height: 2px;
+    margin-top: 1px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.form-input-profile {
+    margin-left: 60px;
+    margin-top: 20x;
+}
+
+.form-input-profile #formInput {
+    width: 50%;
+}
+
+.label {
+    color: #000;
+    font-weight: bold;
+}
+
+.btn.btn-primary.btn-submit {
+    background-color: #38A5AD;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+}
+
+.btn.btn-primary.btn-submit:hover {
+    background-color: #5ac0c7;
+}
+
+.btn.btn-primary.btn-upload-foto {
+    border-radius: 0%;
+    border: none;
+    padding: 6px 12px;
+    background-color: #EFD100;
+    text-align: center;
+    width: 120px;
+    font-weight: bold;
+}
+
+.btn.btn-primary.btn-upload-foto:hover {
+    background-color: #f7f03b;
+}
