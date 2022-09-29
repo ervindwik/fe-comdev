@@ -5,6 +5,9 @@ import gambar1 from '../assets/dashboard-sec1.png'
 import gambar2 from '../assets/dashboard-sec2.png'
 import gambar3 from '../assets/dashboard-sec22.png'
 import gambar4 from '../assets/dashboard-sec3.png'
+import gambar5 from '../assets/prev.png'
+import gambar6 from '../assets/next.png'
+import gambar7 from '../assets/rating.png'
 import "../Styles/Dashboard.css";
 
 function ContentDashboard() {
@@ -59,7 +62,8 @@ function ContentDashboard() {
                             <Card style={{ width: '18rem' }} id='card-courses'>
                                 <Card.Img variant="top" src={gambar3} />
                                 <Card.Body>
-                                    <p>Complete 2022 Web Development Bootcamp</p>
+                                    <p class='mb-1'>Complete 2022 Web Development Bootcamp</p>
+                                    <img src={gambar7} width={135} />
                                     <Card.Text>Rp 150.000</Card.Text>
                                 </Card.Body>
                             </Card>
@@ -67,7 +71,8 @@ function ContentDashboard() {
                             <Card style={{ width: '18rem' }} id='card-courses'>
                                 <Card.Img variant="top" src={gambar3} />
                                 <Card.Body>
-                                    <p>Complete 2022 Web Development Bootcamp</p>
+                                    <p class='mb-1'>Complete 2022 Web Development Bootcamp</p>
+                                    <img src={gambar7} width={135} />
                                     <Card.Text>Rp 150.000</Card.Text>
                                 </Card.Body>
                             </Card>
@@ -75,7 +80,8 @@ function ContentDashboard() {
                             <Card style={{ width: '18rem' }} id='card-courses'>
                                 <Card.Img variant="top" src={gambar3} />
                                 <Card.Body>
-                                    <p>Complete 2022 Web Development Bootcamp</p>
+                                    <p class='mb-1'>Complete 2022 Web Development Bootcamp</p>
+                                    <img src={gambar7} width={135} />
                                     <Card.Text>Rp 150.000</Card.Text>
                                 </Card.Body>
                             </Card>
@@ -83,7 +89,8 @@ function ContentDashboard() {
                             <Card style={{ width: '18rem' }}>
                                 <Card.Img variant="top" src={gambar3} />
                                 <Card.Body>
-                                    <p>Complete 2022 Web Development Bootcamp</p>
+                                    <p class='mb-1'>Complete 2022 Web Development Bootcamp</p>
+                                    <img src={gambar7} width={135} />
                                     <Card.Text>Rp 150.000</Card.Text>
                                 </Card.Body>
                             </Card>
@@ -121,6 +128,10 @@ function ContentDashboard() {
                     </div>
                 </Card>
                 
+                <div id='btn-testi'>
+                    <Link class='me-2'><img src={gambar5} width={30} /></Link>
+                    <Link><img src={gambar6} width={30} /></Link>
+                </div>
             </Container>
         </div>
         </>
