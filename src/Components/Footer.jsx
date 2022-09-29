@@ -8,6 +8,7 @@ import linkedin from "../assets/in.png";
 import youtube from "../assets/yt.png";
 import facebook from "../assets/fb.png";
 import gplay from "../assets/gplay.png";
+import loc from "../assets/loc.png";
 
 const Footer = () => {
     return (
@@ -21,67 +22,62 @@ const Footer = () => {
                         </Col>
                     </Row>
                     <Row>
-                        <Col className="col-md-4">
-                            <br />
-                            <Table className="table-content table-borderless">
-                                <tr>
-                                    <td>
-                                        <ul>
-                                            <li><a href="#tentangkami" className="text-black">Tentang Kami</a></li>
-                                            <li><a href="#bantuan" className="text-black">Bantuan</a></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <br />
-                                <tr>
-                                    <Row>
-                                        <Col className="col-md-2">
-                                            <a href="#facebook"><img alt="instagram" src={instagram} width="40" height="35" /></a>
-                                        </Col>
-                                        <Col className="col-md-2">
-                                            <a href="#facebook"><img alt="twitter" src={twitter} width="40" height="35" /></a>
-                                        </Col>
-                                        <Col className="col-md-2">
-                                            <a href="#facebook"><img alt="linkedin" src={linkedin} width="40" height="35" /></a>
-                                        </Col>
-                                        <Col className="col-md-2">
-                                            <a href="#facebook"><img alt="youtube" src={youtube} width="45" height="35" /></a>
-                                        </Col>
-                                        <Col className="col-md-2">
-                                            <a href="#facebook"><img alt="facebook" src={facebook} width="20" height="35" /></a>
-                                        </Col>
-                                    </Row>
-                                </tr>
-                                <br />
-
-                            </Table>
+                        <Col className="col-md-6">
+                            <ul className="list-item">
+                                <li><a href="#tentangkami" className="text-black">Tentang Kami</a></li>
+                                <li><a href="#bantuan" className="text-black">Bantuan</a></li>
+                            </ul>
                         </Col>
                         <Col className="col-md-6">
-                            <br />
-                            <Table className="table-content table-borderless">
-                                <tr>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, molestiae eos porro iste voluptas vitae, sed optio molestias nostrum debitis at cum odio quaerat eveniet voluptatibus quasi voluptatum officiis. Ipsa!</td>
-                                </tr>
-                                <br />
-                                <tr>
-                                    <td><h5>Cooming Soon</h5></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img alt="gplay" src={gplay} width="200" height="62" />
-                                    </td>
-                                </tr>
-                            </Table>
+                            <div className="column-1">
+                                <Row>
+                                    <Col className="ikon-lok col-md-1 ms-3">
+                                        <img alt="lokasi" src={loc} width="25" height="30" />
+                                    </Col>
+                                    <Col className="lok col-md-6">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </Col>
+                                </Row>
+                            </div>
                         </Col>
                     </Row>
                     <Row>
-                        <Col className="copyright col-md-4">
+                        <Col className="col-md-6">
+                            <div className="column-2">
+                                <Row>
+                                    <Col className="col-md-2">
+                                        <a href="#instagram"><img alt="instagram" src={instagram} width="40" height="35" /></a>
+                                    </Col>
+                                    <Col className="col-md-2 ms-1">
+                                        <a href="#twitter"><img alt="twitter" src={twitter} width="40" height="35" /></a>
+                                    </Col>
+                                    <Col className="col-md-2 ms-1">
+                                        <a href="#linkedin"><img alt="linkedin" src={linkedin} width="40" height="35" /></a>
+                                    </Col>
+                                    <Col className="col-md-2 ms-1">
+                                        <a href="#youtube"><img alt="youtube" src={youtube} width="43" height="35" /></a>
+                                    </Col>
+                                    <Col className="col-md-2 ms-1">
+                                        <a href="#facebook"><img alt="facebook" src={facebook} width="20" height="35" /></a>
+                                    </Col>
+                                </Row>
+                            </div>
+                        </Col>
+                        <Col className="col-md-6">
+                            <div className="column-3">
+                                <h5>Cooming Soon</h5>
+                                <a href="#gplay"><img alt="gplay" src={gplay} width="150" height="30" /></a>
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col className="copyright col-md-8">
                             &#169; 2022 Comdev Institute. All Rights Reserved
                         </Col>
                     </Row>
                 </Container>
             </div>
-        </React.Fragment>
+        </React.Fragment >
     )
 }
 
