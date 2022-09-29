@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import gambar1 from '../assets/dashboard-sec1.png'
 import gambar2 from '../assets/dashboard-sec2.png'
 import gambar3 from '../assets/dashboard-sec22.png'
+import gambar4 from '../assets/dashboard-sec3.png'
 import "../Styles/Dashboard.css";
 
 function ContentDashboard() {
@@ -43,7 +44,15 @@ function ContentDashboard() {
                     </Col>
 
                     <Col className='col-md-9'>
-                        <img alt='gambar2' src={gambar2} width='830' />
+                        <Card className="bg-dark text-white">
+                            <Card.Img src={gambar2} alt="Card image" />
+                            <Card.ImgOverlay>
+                                <h2 id='title-card'>Web Developer Courses</h2>
+                                <p id='text-card'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, molestiae eos porro iste voluptas vitae, <br /> sed optio molestias nostrum debitis at cum odio quaerat.</p>
+                                <button type='submit' id='btn-card'>Mulai Belajar</button>
+                            </Card.ImgOverlay>
+                        </Card>
+
                         <hr id='line' />
 
                         <div class='card-group'>
@@ -88,6 +97,29 @@ function ContentDashboard() {
             <Container>
                 <h3>Apa Kata Mereka?</h3>
 
+                <Card id='testimoni'>
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src={gambar4} class="img-fluid rounded-start" width={335} />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore 
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                                    consequat. Duis aute irure dolor in reprehenderit in 
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                    Excepteur sint occaecat”
+                                </p><br />
+
+                                <p class="card-title">Michael Zaenal Ahmad</p>
+                                <p class="card-title">Web Developer at <b>PT Petik Emas Consulting</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </Card>
                 
             </Container>
         </div>
