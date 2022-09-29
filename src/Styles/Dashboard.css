@@ -19,10 +19,11 @@
 #btn-mulai {
     background-color: #EFD100;
     border-style: none;
-    padding: 1%;
+    border-radius: 3px;
     font-weight: bold;
     width: 10em;
-    margin-top: 5%;
+    height: 2.5em;
+    margin-top: 4%;
 }
 
 .section2 {
@@ -41,11 +42,19 @@
     font-weight: bold;
 }
 
+.section2 a:hover {
+    color: #fff;
+    background-color: #38A5AD;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .section2 p {
     font-weight: bold;
 }
 
-.section2 #line {
+#line {
     border: none;
     background-color: #000;
     height: 3px;
@@ -53,10 +62,40 @@
     margin-bottom: 3%;
 }
 
-.section2 #card-courses {
+#card-courses {
     margin-right: 3%;
+}
+
+#text-card {
+    color: #000;
+    font-size: small;
+    padding-top: 1.5%;
+    padding-left: 2%;
+}
+
+#title-card {
+    padding-top: 1%;
+    padding-left: 2%;
+    font-weight: 650;
+    font-size: 21pt;
+}
+
+#btn-card {
+    background-color: #EFD100;
+    border-style: none;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: smaller;
+    height: 2.2em;
+    width: 10em;
+    margin-left: 2%;
 }
 
 .section3 {
     margin-top: 5%;
+}
+
+#testimoni {
+    margin-top: 3%;
+    padding-right: 2%;
 }
