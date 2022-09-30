@@ -2,14 +2,14 @@
     margin-top: 8%;
 }
 
-/* #btn-profile {
+#btn-profile {
     font-weight: bold;
     color: #ffffff;
     background-color: #38A5AD;
     border-radius: 10px;
     width: 100px;
     text-align: center;
-} */
+}
 
 .me-auto #btn-password {
     font-weight: bold;
@@ -68,9 +68,4 @@
 
 .btn.btn-primary.btn-upload-foto:hover {
     background-color: #f7f03b;
-}
-
-.active{
-    color: #fff !important;
-    background-color:  #38A5AD !important;
 }
