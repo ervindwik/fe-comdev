@@ -29,7 +29,7 @@ const SettingProfile = () => {
                     <Container>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="me-auto">
+                            <Nav className="me-auto" variant="pills" defaultActiveKey="/profile/settingprofile">
                                 <Nav.Link href="/profile/settingprofile" id="btn-profile">Profile</Nav.Link>
                                 <Nav.Link href="#password" id="btn-password">Password</Nav.Link>
                             </Nav>
@@ -59,7 +59,7 @@ const SettingProfile = () => {
                                         onChange={handleChange}
                                         style={{ display: 'none' }}
                                     />
-                                    <p className="mt-2" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam assumenda laboriosam quod atque officiis, enim tempore autem debitis sunt. Dolore alias cumque reprehenderit iusto at quasi ipsam ad. Ipsa, rerum!</p>
+                                    <p className="text mt-2" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam assumenda laboriosam quod atque officiis, enim tempore autem debitis sunt. Dolore alias cumque reprehenderit iusto at quasi ipsam ad. Ipsa, rerum!</p>
                                 </Col>
                             </Row>
 
