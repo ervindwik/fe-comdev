@@ -14,7 +14,7 @@ const SettingPassword = () => {
                     <Container>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="me-auto" variant="pills" defaultActiveKey="/profile/settingprofile">
+                            <Nav className="me-auto" defaultActiveKey="/profile/settingpassword">
                                 <Nav.Link href="/profile/settingprofile" id="btn-profile">Profile</Nav.Link>
                                 <Nav.Link href="/profile/settingpassword" id="btn-password">Password</Nav.Link>
                             </Nav>
@@ -22,6 +22,34 @@ const SettingPassword = () => {
                     </Container>
                 </Navbar>
             </div>
+            <hr className="line-style" />
+
+            <div className="change-password">
+                <Container>
+                    <Form>
+                        <Form.Group className="mb-3" controlId="formInput">
+                            <Form.Label className="label">Password</Form.Label>
+                            <Form.Control type="text" placeholder="Password..." />
+                        </Form.Group>
+
+                        <Form.Group className="mb-3" controlId="formInput">
+                            <Form.Label className="label">Password Baru</Form.Label>
+                            <Form.Control type="text" placeholder="Password Baru..." />
+                        </Form.Group>
+
+                        <Form.Group className="mb-3" controlId="formInput">
+                            <Form.Label className="label">Konfirmasi Password</Form.Label>
+                            <Form.Control type="text" placeholder="Konfirmasi Password..." />
+                        </Form.Group>
+                    </Form>
+
+                    <Button className="btn-submit" type="submit">
+                        Simpan
+                    </Button>
+                </Container>
+            </div>
+
+            <Footer />
         </>
     )
 }
