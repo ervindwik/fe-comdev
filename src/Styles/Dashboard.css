@@ -1,22 +1,18 @@
 .section1 {
-    margin-top: 11%;
+    margin-top: 100px;
 }
 
-.section1 h1 {
+.section1 > .container > .row > .col-md-6 > h1{
+    text-align: center !important;
     font-weight: bold;
-    font-size: 27pt;
+    font-size: 23pt;
 }
 
-.section1 p {
-    margin-top: 5%;
-    font-weight: 500;
+.section1 > .container > .row > .col-md-6 > p{
+    text-align: center !important;
 }
 
-.section1 img {
-    margin-left: 8%;
-}
-
-#btn-mulai {
+.section1 > .container > .row > .col-md-6 > button{
     background-color: #EFD100;
     border-style: none;
     border-radius: 3px;
@@ -24,10 +20,23 @@
     width: 10em;
     height: 2.5em;
     margin-top: 4%;
+    margin-left: 80px;
+
+}
+
+
+.section1 p {
+    margin-top: 5%;
+    font-weight: 500;
+}
+
+.section1 img {
+    margin-left: 0;
+    width: 100%;
 }
 
 .section2 {
-    margin-top: 7%;
+    margin-top: 67px;
 }
 
 .section2 .list-group li {
@@ -106,4 +115,43 @@
 #btn-testi {
     margin-left: 92%;
     margin-top: 1%;
+}
+
+@media (min-width: 992px) {
+    .section1 {
+        margin-top: 139px;
+    }
+
+    
+.section1 > .container > .row > .col-md-6 > h1{
+    text-align: left !important;
+    font-size: 27pt;
+}
+
+.section1 > .container > .row > .col-md-6 > p{
+    text-align: left !important;
+}
+
+.section1 > .container > .row > .col-md-6 > button{
+    background-color: #EFD100;
+    border-style: none;
+    border-radius: 3px;
+    font-weight: bold;
+    width: 10em;
+    height: 2.5em;
+    margin-top: 4%;
+    margin-left: 0px;
+    
+}
+
+.section1 img {
+    margin-left: 8%;
+    width: 70%;
+}
+
+.section2 {
+    margin-top: 87px;
+}
+
+    
 }

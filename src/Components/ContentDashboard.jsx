@@ -16,14 +16,14 @@ function ContentDashboard() {
         <div className='section1'>
             <Container>
                 <Row>
-                    <Col className='col-md-6'>
+                    <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }}>
                         <h1>Bangun Careermu bersama Comdev Institute Sebagai Developer Profesional</h1>
                         <p>Mulailah perjalananmu sebagai developer profesional</p>
-                        <button type='submit' id='btn-mulai'>Belajar Sekarang</button>
+                        <button type='submit'>Belajar Sekarang</button>
                     </Col>
 
-                    <Col className='col-md-6'>
-                        <img alt='gambar1' src={gambar1} height='270' />
+                    <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
+                        <img alt='gambar1' src={gambar1}/>
                     </Col>
                 </Row>
             </Container>
