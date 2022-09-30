@@ -29,7 +29,7 @@ const SettingProfile = () => {
                     <Container>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="me-auto" variant="pills" defaultActiveKey="/profile/settingprofile">
+                            <Nav className="me-auto"  defaultActiveKey="/profile/settingprofile">
                                 <Nav.Link href="/profile/settingprofile" id="btn-profile">Profile</Nav.Link>
                                 <Nav.Link href="#password" id="btn-password">Password</Nav.Link>
                             </Nav>

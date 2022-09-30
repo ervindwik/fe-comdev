@@ -12,8 +12,6 @@
 } */
 
 #btn-profile {
-    background-color: #38A5AD;
-    color: #ffffff;
 }
 
 .me-auto #btn-password {
@@ -73,4 +71,9 @@
 
 .btn.btn-primary.btn-upload-foto:hover {
     background-color: #f7f03b;
+}
+
+.active{
+    color: #fff !important;
+    background-color:  #38A5AD !important;
 }
