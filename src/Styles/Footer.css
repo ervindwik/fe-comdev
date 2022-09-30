@@ -55,6 +55,10 @@
     margin-left: 80px;
 }
 
+.ikon-lok.d-flex > span > p{
+    margin-left: 15px;
+}
+
 /* @media (max-width: 992px) {
     .line-horizontal {
         margin-left: 120px;
@@ -131,4 +135,14 @@
     }
 
 
+
 }
+
+@media (max-width: 520px){
+    /* For Mobile */
+    .ikon-lok.d-flex > span > p{
+        margin-left: 0;
+        font-size: 17px;
+    }
+    
+} 
