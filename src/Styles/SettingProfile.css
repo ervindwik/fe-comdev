@@ -2,16 +2,12 @@
     margin-top: 8%;
 }
 
-/* #btn-profile {
+#btn-profile {
     font-weight: bold;
-    color: #ffffff;
-    background-color: #38A5AD;
-    border-radius: 10px;
-    width: 100px;
-    text-align: center;
-} */
+    color: #000;
+}
 
-.me-auto #btn-password {
+#btn-password {
     font-weight: bold;
     color: #000;
 }
