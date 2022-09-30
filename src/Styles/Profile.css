@@ -69,6 +69,32 @@
   font-size: 70px;
 }
 
+.line-pembatas{
+  border: 5px solid #000 !important;
+  opacity: 50;
+}
+
+#card-courses{
+  margin-top: 30px !important;
+  margin-left: 20px;
+
+}
+
+a:link { text-decoration: none; 
+color: #000;}
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+.card-body > p{
+font-weight: 700;
+font-size: 21px;
+}
+
+.card-text > span {
+  opacity: 0.5;
+}
+
 @media (min-width: 992px) {
   .box-profile {
     height: 430px;
