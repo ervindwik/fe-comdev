@@ -2,18 +2,18 @@
     margin-top: 8%;
 }
 
-/* #btn-profile {
+#btn-profile {
     font-weight: bold;
-    color: #ffffff;
-    background-color: #38A5AD;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 100px;
     text-align: center;
-} */
+}
 
-.me-auto #btn-password {
+#btn-password {
     font-weight: bold;
-    color: #000;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
 }
 
 .line-style {
@@ -26,7 +26,7 @@
 }
 
 .form-input-profile {
-    margin-left: 60px;
+    margin-left: 7.5%;
     margin-top: 20x;
 }
 
@@ -70,7 +70,13 @@
     background-color: #f7f03b;
 }
 
-.active {
-    color: #fff;
-    background-color: #38A5AD;
+
+.active{
+    color: #fff !important;
+    background-color:  #38A5AD !important;
+}
+
+.change-password {
+    margin-left: 11.5%;
+    width: 50%;
 }

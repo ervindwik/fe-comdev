@@ -29,7 +29,7 @@ const SettingProfile = () => {
                     <Container>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="me-auto"  defaultActiveKey="/profile/settingprofile">
+                            <Nav className="me-auto" defaultActiveKey="/profile/settingprofile">
                                 <Nav.Link href="/profile/settingprofile" id="btn-profile">Profile</Nav.Link>
                                 <Nav.Link href="/profile/settingpassword" id="btn-password">Password</Nav.Link>
                             </Nav>
@@ -85,7 +85,7 @@ const SettingProfile = () => {
                             <Form.Control as="textarea" rows={3} placeholder="Tentang Saya...." />
                         </Form.Group>
                         <Button className="btn-submit" type="submit">
-                            Submit
+                            Simpan
                         </Button>
                     </Form>
                 </Container>
