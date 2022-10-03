@@ -109,9 +109,9 @@ function ContentDashboard() {
                         <div class="col-md-4">
                             <img src={gambar4} class="img-fluid rounded-start" width={335} />
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <p class="card-text">
+                        <div className="col-md-8">
+                            <div className="card-body">
+                                <p className="card-text">
                                     “Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                                     sed do eiusmod tempor incididunt ut labore et dolore 
                                     magna aliqua. Ut enim ad minim veniam, quis nostrud 
@@ -121,8 +121,8 @@ function ContentDashboard() {
                                     Excepteur sint occaecat”
                                 </p><br />
 
-                                <p class="card-title">Michael Zaenal Ahmad</p>
-                                <p class="card-title">Web Developer at <b>PT Petik Emas Consulting</b></p>
+                                <p className="card-title">Michael Zaenal Ahmad</p>
+                                <p className="card-title">Web Developer at <b>PT Petik Emas Consulting</b></p>
                             </div>
                         </div>
                     </div>
