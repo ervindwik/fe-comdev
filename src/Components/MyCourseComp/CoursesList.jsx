@@ -42,7 +42,7 @@ const CoursesList = () => {
                                 <span>
                                     <h1 className="text-center" style={{ 
                                         opacity :'0.5',
-                                        marginBottom:'85px',
+                                        marginBottom:'95px',
                                         marginTop:'10px'
                                      }}>Add Course</h1>
                                 </span>
@@ -80,8 +80,6 @@ const CoursesList = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-            </Row>
-            <Row>
                 <Col md={{ span: 4 }}>
                     <Card style={{ width: "18rem" }} id="card-courses">
                         <Card.Img variant="top" src={gambar3} />

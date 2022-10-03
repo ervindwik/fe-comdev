@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 const Header = () => {
     return(
         <Container>
-            <h1 style={{'margin-top' : '100px'}}>My Course</h1>
+            <h1 style={{'margin-top' : '80px'}}>My Course</h1>
         </Container>
         
     )

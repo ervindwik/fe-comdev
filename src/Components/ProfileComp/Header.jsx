@@ -19,14 +19,14 @@ const Header = () => {
             </div>
           </div>
             </div>
-            <div className="d-flex flex-row-reverse bd-highlight">
+            {/* <div className="d-flex flex-row-reverse bd-highlight">
             <div className="p-2 bd-highlight box-course">
               <img src={Course} alt="courseIcon" className='courseIcon'/>
               <img src={Start} alt="startIcon" className="startIcon" />
               <span className='item-course'>5</span>
               <h1>COURSES</h1>
             </div>
-            </div>
+            </div> */}
         </Container>
     )
 }
