@@ -31,11 +31,9 @@ const Footer = () => {
                         <Col className="col-md-6">
                             <div className="column-1">
                                 <Row>
-                                    <Col className="ikon-lok col-md-1 ms-3">
+                                    <Col className="ikon-lok  d-flex">
                                         <img alt="lokasi" src={loc} width="25" height="30" />
-                                    </Col>
-                                    <Col className="lok col-md-6">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></span> 
                                     </Col>
                                 </Row>
                             </div>
