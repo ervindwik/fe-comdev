@@ -86,7 +86,7 @@ function ContentDashboard() {
                                 </Card.Body>
                             </Card>
 
-                            <Card style={{ width: '18rem' }}>
+                            <Card style={{ width: '18rem' }} id='card-courses'>
                                 <Card.Img variant="top" src={gambar3} />
                                 <Card.Body>
                                     <p class='mb-1'>Complete 2022 Web Development Bootcamp</p>
