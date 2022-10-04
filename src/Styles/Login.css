@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+.text-login {
+    margin-left: 38px;
+}
+
 figure.bg1 {
     background-image: url(../assets/bg.png);
     background-size: cover;

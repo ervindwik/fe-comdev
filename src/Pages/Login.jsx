@@ -39,7 +39,7 @@ const Login = () => {
                                 <Button id="button-masuk" type="submit">
                                     Login
                                 </Button>
-                                <p><b>Atau</b></p>
+                                <p className="text-login"><b><center>Atau</center></b></p>
                                 <Button className="btn-google" type="submit">
                                     <img
                                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/768px-Google_%22G%22_Logo.svg.png"
@@ -48,8 +48,10 @@ const Login = () => {
                                     />
                                     Masuk dengan Google
                                 </Button>
-                                <p>
-                                    <b>Tidak punya akun? Yuk <Link to={"/register"}>Daftar</Link>{" "}</b>
+                                <p className="text-login">
+                                    <center>
+                                        <b>Tidak punya akun? Yuk <Link to={"/register"}>Daftar</Link>{" "}</b>
+                                    </center>
                                 </p>
                             </Form>
                         </div>
