@@ -24,7 +24,7 @@ const NavbarComp = (props) => {
                             className="searchBar"
                             aria-label="Search"
                         />
-                        <Button type="submit" className="buttonSearch"><img src={searchBar} alt="" width="20px" /></Button>
+                        <Button type="submit" className="buttonSearch"><img src={searchBar} alt="" width="30px" /></Button>
                     </Form>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />

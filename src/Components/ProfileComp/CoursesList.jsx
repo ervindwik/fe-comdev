@@ -13,7 +13,7 @@ const CoursesList = () => {
                     <Card style={{ width: "18rem" }} id="card-courses">
                         <Card.Img variant="top" src={gambar3} />
                         <Card.Body>
-                            <p class="mb-1">Complete 2022 Web Development Bootcamp</p>
+                            <p class="mb-1 fw-bolder fs-5">Complete 2022 Web Development Bootcamp</p>
                             <Card.Text>
                             <img src={folder} width={40}/><span> 10 Modul</span> 
                             </Card.Text>
@@ -26,7 +26,7 @@ const CoursesList = () => {
                     <Card style={{ width: "18rem" }} id="card-courses">
                         <Card.Img variant="top" src={gambar3} />
                         <Card.Body>
-                            <p class="mb-1">Complete 2022 Web Development Bootcamp</p>
+                            <p class="mb-1 fw-bolder fs-5">Complete 2022 Web Development Bootcamp</p>
                             <Card.Text>
                             <img src={folder} width={40}/><span> 10 Modul</span> 
                             </Card.Text>
@@ -39,7 +39,7 @@ const CoursesList = () => {
                     <Card style={{ width: "18rem" }} id="card-courses">
                         <Card.Img variant="top" src={gambar3} />
                         <Card.Body>
-                            <p class="mb-1">Complete 2022 Web Development Bootcamp</p>
+                            <p class="mb-1 fw-bolder fs-5">Complete 2022 Web Development Bootcamp</p>
                             <Card.Text>
                             <img src={folder} width={40}/><span> 10 Modul</span> 
                             </Card.Text>
@@ -54,7 +54,7 @@ const CoursesList = () => {
                     <Card style={{ width: "18rem" }} id="card-courses">
                         <Card.Img variant="top" src={gambar3} />
                         <Card.Body>
-                            <p class="mb-1">Complete 2022 Web Development Bootcamp</p>
+                            <p class="mb-1 fw-bolder fs-5">Complete 2022 Web Development Bootcamp</p>
                             <Card.Text>
                             <img src={folder} width={40}/><span> 10 Modul</span> 
                             </Card.Text>
@@ -67,7 +67,7 @@ const CoursesList = () => {
                     <Card style={{ width: "18rem" }} id="card-courses">
                         <Card.Img variant="top" src={gambar3} />
                         <Card.Body>
-                            <p class="mb-1">Complete 2022 Web Development Bootcamp</p>
+                            <p class="mb-1 fw-bolder fs-5">Complete 2022 Web Development Bootcamp</p>
                             <Card.Text>
                             <img src={folder} width={40}/><span> 10 Modul</span> 
                             </Card.Text>
@@ -80,7 +80,7 @@ const CoursesList = () => {
                     <Card style={{ width: "18rem" }} id="card-courses">
                         <Card.Img variant="top" src={gambar3} />
                         <Card.Body>
-                            <p class="mb-1">Complete 2022 Web Development Bootcamp</p>
+                            <p class="mb-1 fw-bolder fs-5">Complete 2022 Web Development Bootcamp</p>
                             <Card.Text>
                             <img src={folder} width={40}/><span> 10 Modul</span> 
                             </Card.Text>
