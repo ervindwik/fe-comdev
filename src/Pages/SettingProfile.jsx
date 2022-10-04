@@ -9,6 +9,7 @@ import { useRef } from "react";
 const SettingProfile = () => {
     const [profile, setProfile] = useState(profileImage);
     const hiddenFileInput = useRef(null);
+    const [active, setActive] = useState('default');
 
     const handleClick = (e) => {
         hiddenFileInput.current.click();
@@ -27,13 +28,17 @@ const SettingProfile = () => {
             <div className="navigasi">
                 <Navbar bg="white" expand="lg">
                     <Container>
-                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                        <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="me-auto" defaultActiveKey="/profile/settingprofile">
-                                <Nav.Link href="/profile/settingprofile" id="btn-profile">Profile</Nav.Link>
-                                <Nav.Link href="/profile/settingpassword" id="btn-password">Password</Nav.Link>
-                            </Nav>
-                        </Navbar.Collapse>
+                        <Nav className="sub-nav-prof"
+                            activeKey={active}
+                            onSelect={(selectedKey) => setActive(selectedKey)}
+                        >
+                            <Nav.Item>
+                                <Nav.Link eventKey="default" href="/profile/settingprofile" id="action-profile">Profile</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link eventKey="link-1" href="/profile/settingpassword" id="action-password">Password</Nav.Link>
+                            </Nav.Item>
+                        </Nav>
                     </Container>
                 </Navbar>
             </div>
@@ -46,7 +51,7 @@ const SettingProfile = () => {
                             <Row>
                                 <Col className="col-md-2 me-5">
                                     <div className="img-profile">
-                                        <img src={profile} alt="profile" className="" width={200} />
+                                        <img src={profileImage} alt="profile" className="" width={200} />
                                     </div>
                                 </Col>
                                 <Col className="col-md-6">
@@ -59,7 +64,9 @@ const SettingProfile = () => {
                                         onChange={handleChange}
                                         style={{ display: 'none' }}
                                     />
-                                    <p className="text mt-2" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam assumenda laboriosam quod atque officiis, enim tempore autem debitis sunt. Dolore alias cumque reprehenderit iusto at quasi ipsam ad. Ipsa, rerum!</p>
+                                    <p className="text mt-2 mb-0" >Resolusi Minimal 64 x 64</p>
+                                    <p>Max File 1 MB</p>
+
                                 </Col>
                             </Row>
 
