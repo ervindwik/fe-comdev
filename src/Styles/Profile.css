@@ -86,13 +86,9 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
-.card-body > p{
-font-weight: 700;
-font-size: 21px;
-}
-
 .card-text > span {
   opacity: 0.5;
+  font-size: 22px;
 }
 
 @media (min-width: 992px) {

@@ -9,9 +9,9 @@ const CoursesList = () => {
         <Container>
             <Row>
                 {/* Add Course */}
-                <Col md={{ span: 4 }}>
+                <Col md={{ span: 3 }}>
                     <Card style={{
-                        width: "18rem",
+                        width: "15rem",
                         borderWidth: 5,
                         borderStyle: 'dashed',
                     }}
@@ -26,7 +26,8 @@ const CoursesList = () => {
                                     textAlign:'center',
                                     width:'5rem',
                                     margin:'auto',
-                                    marginTop:"130px",
+                                    marginTop:"95px",
+                                    marginLeft:"60px",
                                     opacity:'0.5',
                                     borderRadius:'50%'
                                  }}
@@ -40,11 +41,12 @@ const CoursesList = () => {
                                  
                                 </div>
                                 <span>
-                                    <h1 className="text-center" style={{ 
+                                    <h2 className="text-center" style={{ 
                                         opacity :'0.5',
-                                        marginBottom:'95px',
-                                        marginTop:'10px'
-                                     }}>Add Course</h1>
+                                        marginBottom:'35px',
+                                        marginTop:'10px',
+                                        marginLeft:'40px'
+                                     }}>Add Course</h2>
                                 </span>
 
                             </Card.Text>
@@ -52,73 +54,73 @@ const CoursesList = () => {
                     </Card>
                 </Col>
                 {/* end add course */}
-                <Col md={{ span: 4 }}>
-                    <Card style={{ width: "18rem" }} id="card-courses">
+                <Col md={{ span: 3 }}>
+                    <Card style={{   width: "15rem", }} id="card-courses">
                         <Card.Img variant="top" src={gambar3} />
                         <Card.Body>
-                            <p class="mb-1">Complete 2022 Web Development Bootcamp</p>
+                            <p class="mb-1 fw-bolder fs-5">Complete 2022 Web Development Bootcamp</p>
                             <Card.Text>
                                 <img src={folder} width={40} /><span> 10 Modul</span>
                             </Card.Text>
-                            <a href="#" className="btn btn-success pe-3 me-2 ps-2">EDIT</a>
-                            <a href="#" className="btn btn-danger pe-2 me-2 ps-2">HAPUS</a>
-                            <a href="#" className="btn btn-info pe-2 ps-2 text-white">DETAIL</a>
+                            <a href="#" className="btn btn-success pe-2 me-2 ps-2">EDIT</a>
+                            <a href="#" className="btn btn-danger pe-1 me-2 ps-1">HAPUS</a>
+                            <a href="#" className="btn btn-info pe-1 ps-1 text-white">DETAIL</a>
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col ma={{ span: 4 }}>
-                    <Card style={{ width: "18rem" }} id="card-courses">
+                <Col ma={{ span: 3 }}>
+                    <Card style={{   width: "15rem",}} id="card-courses">
                         <Card.Img variant="top" src={gambar3} />
                         <Card.Body>
-                            <p class="mb-1">Complete 2022 Web Development Bootcamp</p>
+                            <p class="mb-1 fw-bolder fs-5">Complete 2022 Web Development Bootcamp</p>
                             <Card.Text>
                                 <img src={folder} width={40} /><span> 10 Modul</span>
                             </Card.Text>
-                            <a href="#" className="btn btn-success pe-3 me-2 ps-2">EDIT</a>
-                            <a href="#" className="btn btn-danger pe-2 me-2 ps-2">HAPUS</a>
-                            <a href="#" className="btn btn-info pe-2 ps-2 text-white">DETAIL</a>
+                            <a href="#" className="btn btn-success pe-2 me-2 ps-2">EDIT</a>
+                            <a href="#" className="btn btn-danger pe-1 me-2 ps-1">HAPUS</a>
+                            <a href="#" className="btn btn-info pe-1 ps-1 text-white">DETAIL</a>
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col md={{ span: 4 }}>
-                    <Card style={{ width: "18rem" }} id="card-courses">
+                <Col md={{ span: 3 }}>
+                    <Card style={{   width: "15rem",}} id="card-courses">
                         <Card.Img variant="top" src={gambar3} />
                         <Card.Body>
-                            <p class="mb-1">Complete 2022 Web Development Bootcamp</p>
+                            <p class="mb-1 fw-bolder fs-5">Complete 2022 Web Development Bootcamp</p>
                             <Card.Text>
                                 <img src={folder} width={40} /><span> 10 Modul</span>
                             </Card.Text>
-                            <a href="#" className="btn btn-success pe-3 me-2 ps-2">EDIT</a>
-                            <a href="#" className="btn btn-danger pe-2 me-2 ps-2">HAPUS</a>
-                            <a href="#" className="btn btn-info pe-2 ps-2 text-white">DETAIL</a>
+                            <a href="#" className="btn btn-success pe-2 me-2 ps-2">EDIT</a>
+                            <a href="#" className="btn btn-danger pe-1 me-2 ps-1">HAPUS</a>
+                            <a href="#" className="btn btn-info pe-1 ps-1 text-white">DETAIL</a>
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col md={{ span: 4 }}>
-                    <Card style={{ width: "18rem" }} id="card-courses">
+                <Col md={{ span: 3 }}>
+                    <Card style={{   width: "15rem", }} id="card-courses">
                         <Card.Img variant="top" src={gambar3} />
                         <Card.Body>
-                            <p class="mb-1">Complete 2022 Web Development Bootcamp</p>
+                            <p class="mb-1 fw-bolder fs-5">Complete 2022 Web Development Bootcamp</p>
                             <Card.Text>
                                 <img src={folder} width={40} /><span> 10 Modul</span>
                             </Card.Text>
-                            <a href="#" className="btn btn-success pe-3 me-2 ps-2">EDIT</a>
-                            <a href="#" className="btn btn-danger pe-2 me-2 ps-2">HAPUS</a>
-                            <a href="#" className="btn btn-info pe-2 ps-2 text-white">DETAIL</a>
+                            <a href="#" className="btn btn-success pe-2 me-2 ps-2">EDIT</a>
+                            <a href="#" className="btn btn-danger pe-1 me-2 ps-1">HAPUS</a>
+                            <a href="#" className="btn btn-info pe-1 ps-1 text-white">DETAIL</a>
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col md={{ span: 4 }}>
-                    <Card style={{ width: "18rem" }} id="card-courses">
+                <Col md={{ span: 3 }}>
+                    <Card style={{    width: "15rem", }} id="card-courses">
                         <Card.Img variant="top" src={gambar3} />
                         <Card.Body>
-                            <p class="mb-1">Complete 2022 Web Development Bootcamp</p>
+                            <p class="mb-1 fw-bolder fs-5">Complete 2022 Web Development Bootcamp</p>
                             <Card.Text>
                                 <img src={folder} width={40} /><span> 10 Modul</span>
                             </Card.Text>
-                            <a href="#" className="btn btn-success pe-3 me-2 ps-2">EDIT</a>
-                            <a href="#" className="btn btn-danger pe-2 me-2 ps-2">HAPUS</a>
-                            <a href="#" className="btn btn-info pe-2 ps-2 text-white">DETAIL</a>
+                            <a href="#" className="btn btn-success pe-2 me-2 ps-2">EDIT</a>
+                            <a href="#" className="btn btn-danger pe-1 me-2 ps-1">HAPUS</a>
+                            <a href="#" className="btn btn-info pe-1 ps-1 text-white">DETAIL</a>
                         </Card.Body>
                     </Card>
                 </Col>
