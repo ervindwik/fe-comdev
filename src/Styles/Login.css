@@ -9,6 +9,12 @@
     margin-left: 38px;
 }
 
+.text-regis {
+    width: 300px;
+    font-size: small;
+    margin-left: 3.8%;
+}
+
 figure.bg1 {
     background-image: url(../assets/bg.png);
     background-size: cover;
@@ -50,7 +56,6 @@ figure.bg1 {
     }
 
 }
-
 
 
 /* .login-body h2 {

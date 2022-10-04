@@ -50,7 +50,7 @@ const Login = () => {
                                 </Button>
                                 <p className="text-login">
                                     <center>
-                                        <b>Tidak punya akun? Yuk <Link to={"/register"}>Daftar</Link>{" "}</b>
+                                        <b>Tidak punya akun? <Link to={"/regis"}>Daftar</Link>{" "}</b>
                                     </center>
                                 </p>
                             </Form>
