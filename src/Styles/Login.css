@@ -105,7 +105,7 @@ figure.bg1 {
     text-align: center;
 }
 
-.login-body .button-google {
+.login-body .btn-google {
     color: #000000;
     background-color: #ffffff;
     width: 328px;
@@ -116,18 +116,13 @@ figure.bg1 {
     margin-bottom: 15px;
 }
 
-.login-body #button-masuk .btn-primary:hover {
-    text-decoration: none;
-    background-color: #000000;
-}
-
-.button-google img {
+.btn-google img {
     margin-right: 10px;
     margin-bottom: 3px;
 }
 
-.btn-primary:not([disabled]):not(.disabled).active,
-.btn-primary:not([disabled]):not(.disabled):active,
+.btn-primary:not([disabled]):not(.disabled).active #button-masuk,
+.btn-primary:not([disabled]):not(.disabled):active #button-masuk,
 .btn-primary:not([disabled]):not(.disabled).hover #button-masuk,
 .btn-primary:not([disabled]):not(.disabled)#button-masuk:hover {
     color: #38A5AD !important;
@@ -135,10 +130,10 @@ figure.bg1 {
     border-color: #ffffff !important;
 }
 
-.btn-primary:not([disabled]):not(.disabled).active,
-.btn-primary:not([disabled]):not(.disabled):active,
-.btn-primary:not([disabled]):not(.disabled).hover,
-.btn-primary:not([disabled]):not(.disabled):hover {
+.btn-primary:not([disabled]):not(.disabled).active .btn-google,
+.btn-primary:not([disabled]):not(.disabled):active .btn-google,
+.btn-primary:not([disabled]):not(.disabled).hover .btn-google,
+.btn-primary:not([disabled]):not(.disabled).btn-google:hover {
     color: #fff !important;
     background-color: #000 !important;
     border-color: #000 !important;
