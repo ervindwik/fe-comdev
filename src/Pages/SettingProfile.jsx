@@ -15,11 +15,10 @@ const SettingProfile = () => {
         hiddenFileInput.current.click();
     };
 
-    const handleChange = (e) => {
-    };
-
     const handleImage = (e) => {
-
+        const file = e.target.file;
+        const data = new FormData()
+        data.append('file', file[0])
     }
 
     return (
@@ -61,7 +60,7 @@ const SettingProfile = () => {
                                     <input
                                         type="file"
                                         ref={hiddenFileInput}
-                                        onChange={handleChange}
+                                        onChange={handleImage}
                                         style={{ display: 'none' }}
                                     />
                                     <p className="text mt-2 mb-0" >Resolusi Minimal 64 x 64</p>
