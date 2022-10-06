@@ -3,11 +3,11 @@ import { Container, Navbar, Nav, Form, Button, Col, Row } from "react-bootstrap"
 import Footer from "../Components/Footer";
 import NavbarComp from "../Components/Navbar";
 import "../Styles/SettingProfile.css";
-import profileImage from "../assets/profile.png";
+import profileImage from "../assets/user.png";
 import { useRef } from "react";
 
 const SettingProfile = () => {
-    const [profile, setProfile] = useState(profileImage);
+    const [image, setImage] = useState("");
     const hiddenFileInput = useRef(null);
     const [active, setActive] = useState('default');
 
@@ -15,10 +15,11 @@ const SettingProfile = () => {
         hiddenFileInput.current.click();
     };
 
-    const handleImage = (e) => {
-        const file = e.target.file;
-        const data = new FormData()
-        data.append('file', file[0])
+    const onSubmit = () => {
+        console.log('image', image);
+
+        const data = new FormData();
+        data.append = ('image', image);
     }
 
     return (
@@ -50,22 +51,23 @@ const SettingProfile = () => {
                             <Row>
                                 <Col className="col-md-2 me-5">
                                     <div className="img-profile">
-                                        <img src={profileImage} alt="profile" className="" width={200} />
+                                        <img className="css-img-profile" src={profileImage} />
                                     </div>
                                 </Col>
-                                <Col className="col-md-6">
+                                <Col className="col-md-6 ms-3 mt-1">
                                     <Button className="btn-upload-foto" onClick={handleClick}>
                                         Pilih Foto
                                     </Button>
                                     <input
                                         type="file"
                                         ref={hiddenFileInput}
-                                        onChange={handleImage}
+                                        onChange={""}
                                         style={{ display: 'none' }}
                                     />
-                                    <p className="text mt-2 mb-0" >Resolusi Minimal 64 x 64</p>
-                                    <p>Max File 1 MB</p>
-
+                                    <div className="text-info">
+                                        <p className="text mt-2 mb-0" >Resolusi Minimal 64 x 64</p>
+                                        <p>Max File 1 MB</p>
+                                    </div>
                                 </Col>
                             </Row>
 
