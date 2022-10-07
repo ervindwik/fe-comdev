@@ -1,10 +1,30 @@
-import React from "react";
+import { React, useState } from "react";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import background from "../assets/logo.svg";
 import "../Styles/Login.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye } from "@fortawesome/free-regular-svg-icons";
+const eye = <FontAwesomeIcon icon={faEye} />;
 
 const Login = () => {
+    const [values, setValues] = React.useState({
+        password: "",
+        showPassword: false,
+    });
+
+    const handleClickShowPassword = () => {
+        setValues({ ...values, showPassword: !values.showPassword });
+    };
+
+    const handleMouseDownPassword = (event) => {
+        event.preventDefault();
+    };
+
+    const handlePasswordChange = (prop) => (event) => {
+        setValues({ ...values, [prop]: event.target.value });
+    };
+
     return (
         <>
             <Container>
@@ -21,10 +41,11 @@ const Login = () => {
                             <Form>
                                 <h3>Masuk</h3>
                                 <Form.Group className="mb-3" controlId="formInput">
-                                    <Form.Control type="username" placeholder="Username..." />
+                                    <Form.Control type="text" placeholder="Username..." />
                                 </Form.Group>
                                 <Form.Group className="mb-3" controlId="formInput">
-                                    <Form.Control type="password" placeholder="Password..." />
+                                    <Form.Control placeholder="Password..." name="password" />
+                                    <i onClick={Eye} className={`fa ${eye ? "fa-eye-slash" : "fa-eye"}`}> </i>
                                 </Form.Group>
                                 <Form.Group className="mb-3" controlId="formCheckbox">
                                     <Row>
