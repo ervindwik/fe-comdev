@@ -37,11 +37,12 @@
 .css-img-profile {
     background-color: #fff;
     border-radius: 50%;
-    width: 210px;
-    height: 210px;
-    margin-top: 22px;
-    margin-left: 18px;
-    box-shadow: 0px 0px 0px 1px #fff;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    margin-top: 5%;
+    margin-left: 5%;
+    box-shadow: 0px 0px 0px 2px #fff;
 }
 
 .form-input-profile {

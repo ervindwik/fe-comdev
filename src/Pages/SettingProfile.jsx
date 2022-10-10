@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Container, Navbar, Nav, Form, Button, Col, Row } from "react-bootstrap";
 import Footer from "../Components/Footer";
-import NavbarComp from "../Components/Navbar";
+import NavbarProfile from "../Components/NavProfile";
 import "../Styles/SettingProfile.css";
 import profileImage from "../assets/user.png";
 import { useRef } from "react";
 
 const SettingProfile = () => {
-    const [image, setImage] = useState("");
+    const [image, setImage] = useState(profileImage);
     const hiddenFileInput = useRef(null);
     const [active, setActive] = useState('default');
 
@@ -15,16 +15,15 @@ const SettingProfile = () => {
         hiddenFileInput.current.click();
     };
 
-    const onSubmit = () => {
-        console.log('image', image);
-
-        const data = new FormData();
-        data.append = ('image', image);
+    const handleUploadChange = (e) => {
+        console.log(e.target.files[0]);
+        let uploaded = e.target.files[0];
+        setImage(URL.createObjectURL(uploaded));
     }
 
     return (
         <>
-            <NavbarComp />
+            <NavbarProfile />
             <div className="navigasi">
                 <Navbar bg="white" expand="lg">
                     <Container>
@@ -51,7 +50,7 @@ const SettingProfile = () => {
                             <Row>
                                 <Col className="col-md-2 me-5">
                                     <div className="img-profile">
-                                        <img className="css-img-profile" src={profileImage} />
+                                        <img className="css-img-profile" src={image} />
                                     </div>
                                 </Col>
                                 <Col className="col-md-6 ms-3 mt-1">
@@ -61,8 +60,9 @@ const SettingProfile = () => {
                                     <input
                                         type="file"
                                         ref={hiddenFileInput}
-                                        onChange={""}
+                                        onChange={handleUploadChange}
                                         style={{ display: 'none' }}
+                                        accept="image/*"
                                     />
                                     <div className="text-info">
                                         <p className="text mt-2 mb-0" >Resolusi Minimal 64 x 64</p>
