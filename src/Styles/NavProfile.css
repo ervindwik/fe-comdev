@@ -57,6 +57,7 @@ input.form-control:focus {
 }
 
 .profile img {
+    margin-left: 450%;
     overflow: hidden;
     cursor: pointer;
 }

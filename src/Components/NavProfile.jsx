@@ -13,6 +13,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 import { NavbarBrand } from "react-bootstrap";
 import user from "../assets/user.png";
 import profile from "../assets/profile.png";
+import course from "../assets/course.png";
+import setting from "../assets/setting.png";
+import logout from "../assets/logout.png";
 import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 
 const NavbarProfile = () => {
@@ -50,18 +53,21 @@ const NavbarProfile = () => {
                         </NavDropdown>
                         <Nav.Link href="#action1">Langganan</Nav.Link>
                         <Nav.Link href="#action2">Lainya</Nav.Link>
+
+                        <div className="profile" onClick={() => { setOpen(!open) }}>
+                            <img src={user} className="user" width={45}></img>
+                        </div>
+                        <div className={`dropdown-menu ${open ? 'active' : 'inactive'}`}>
+                            <ul>
+                                <DropdownItem img={profile} text={"My Profile"} />
+                                <DropdownItem img={course} text={"My Course"} />
+                                <DropdownItem img={setting} text={"Pengaturan"} />
+                                <DropdownItem img={logout} text={"Logout"} />
+                            </ul>
+                        </div>
                     </Nav>
                 </Navbar.Collapse>
                 <Navbar.Collapse>
-
-                    <div className="profile" onClick={() => { setOpen(!open) }}>
-                        <img src={user} className="user" width={45}></img>
-                    </div>
-                    <div className={`dropdown-menu ${open ? 'active' : 'inactive'}`}>
-                        <ul>
-                            <DropdownItem img={profile} text={"My Profile"} />
-                        </ul>
-                    </div>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
