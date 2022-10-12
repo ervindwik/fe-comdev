@@ -33,6 +33,7 @@ figure.bg1 {
 
 
 
+
 @media (min-width: 992px) {
 
     /* Desktop */
@@ -88,10 +89,18 @@ figure.bg1 {
     border-radius: 10px;
 } */
 
-#formInput {
+#formInputUsername {
     border: solid;
     border-width: 1px;
     border-radius: 10px;
+    width: 100%;
+}
+
+#formInputPass {
+    border: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    width: 215%;
 }
 
 #term {
@@ -100,6 +109,22 @@ figure.bg1 {
     font-size: smaller;
     margin-bottom: 30px;
     margin-top: 20px;
+}
+
+#btn-pass {
+    color: #000000;
+    background-color: transparent;
+    border: none;
+    padding: 0.2rem 0.1rem;
+    font-size: 1.2rem;
+    outline: none;
+    margin-left: 50%;
+    margin-left: 75%;
+    cursor: pointer;
+}
+
+.lupa-pass {
+    margin-left: 20%;
 }
 
 .login-body #button-masuk {
@@ -134,8 +159,8 @@ figure.bg1 {
 .btn-primary:not([disabled]):not(.disabled):active #button-masuk,
 .btn-primary:not([disabled]):not(.disabled).hover #button-masuk,
 .btn-primary:not([disabled]):not(.disabled)#button-masuk:hover {
-    color: #38A5AD !important;
-    background-color: #ffffff !important;
+    color: #fff !important;
+    background-color: #1b5357 !important;
     border-color: #ffffff !important;
 }
 

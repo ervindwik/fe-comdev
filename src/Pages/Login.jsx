@@ -3,28 +3,15 @@ import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import background from "../assets/logo.svg";
 import "../Styles/Login.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye } from "@fortawesome/free-regular-svg-icons";
-const eye = <FontAwesomeIcon icon={faEye} />;
+import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
+
 
 const Login = () => {
-    const [values, setValues] = React.useState({
-        password: "",
-        showPassword: false,
-    });
+    const [state, setState] = useState(false);
 
-    const handleClickShowPassword = () => {
-        setValues({ ...values, showPassword: !values.showPassword });
-    };
-
-    const handleMouseDownPassword = (event) => {
-        event.preventDefault();
-    };
-
-    const handlePasswordChange = (prop) => (event) => {
-        setValues({ ...values, [prop]: event.target.value });
-    };
-
+    const handleBtnPass = () => {
+        setState(prevState => !prevState);
+    }
     return (
         <>
             <Container>
@@ -40,12 +27,22 @@ const Login = () => {
                         <div className="d-flex justify-content-center login-body">
                             <Form>
                                 <h3>Masuk</h3>
-                                <Form.Group className="mb-3" controlId="formInput">
+                                <Form.Group className="mb-3" controlId="formInputUsername">
                                     <Form.Control type="text" placeholder="Username..." />
                                 </Form.Group>
-                                <Form.Group className="mb-3" controlId="formInput">
-                                    <Form.Control placeholder="Password..." name="password" />
-                                    <i onClick={Eye} className={`fa ${eye ? "fa-eye-slash" : "fa-eye"}`}> </i>
+                                <Form.Group className="mb-3" controlId="formInputPass">
+                                    <Row>
+                                        <Col className="md-10">
+                                            <Form.Control type={state ? "text" : "password"} placeholder="Password..." />
+                                        </Col>
+                                        <Col className="md-2">
+                                            <Button id="btn-pass" onClick={handleBtnPass}>
+                                                {
+                                                    state ? <AiOutlineEyeInvisible /> : <AiOutlineEye />
+                                                }
+                                            </Button>
+                                        </Col>
+                                    </Row>
                                 </Form.Group>
                                 <Form.Group className="mb-3" controlId="formCheckbox">
                                     <Row>
@@ -53,7 +50,7 @@ const Login = () => {
                                             <Form.Check type="checkbox" label="Ingat Saya" />
                                         </Col>
                                         <Col>
-                                            <Link>Lupa Password</Link>
+                                            <Link className="lupa-pass">Lupa Password ?</Link>
                                         </Col>
                                     </Row>
                                 </Form.Group>
