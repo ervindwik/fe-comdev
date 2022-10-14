@@ -8,9 +8,34 @@ import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 
 const Login = () => {
     const [state, setState] = useState(false);
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const [error, setError] = useState("");
 
     const handleBtnPass = () => {
         setState(prevState => !prevState);
+    }
+
+
+    const handleUsername = (e) => {
+        const value = e.target.value
+        setUsername(value);
+        setError('')
+    }
+
+    const handlePassword = (e) => {
+        const value = e.target.value
+        setPassword(value);
+        setError('')
+    }
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const dataUser = {
+            username: username,
+            password: password
+        }
+        console.log(dataUser)
     }
     return (
         <>
@@ -25,15 +50,20 @@ const Login = () => {
                     </Col>
                     <Col md="6">
                         <div className="d-flex justify-content-center login-body">
-                            <Form>
+                            <Form onSubmit={handleSubmit}>
                                 <h3>Masuk</h3>
                                 <Form.Group className="mb-3" controlId="formInputUsername">
-                                    <Form.Control type="text" placeholder="Username..." />
+                                    <Form.Control type="text" placeholder="Username..."
+                                        value={username}
+                                        onChange={handleUsername} />
                                 </Form.Group>
                                 <Form.Group className="mb-3" controlId="formInputPass">
                                     <Row>
                                         <Col className="md-10">
-                                            <Form.Control type={state ? "text" : "password"} placeholder="Password..." />
+                                            <Form.Control type={state ? "text" : "password"}
+                                                placeholder="Password..."
+                                                value={password}
+                                                onChange={handlePassword} />
                                         </Col>
                                         <Col className="md-2">
                                             <Button id="btn-pass" onClick={handleBtnPass}>
