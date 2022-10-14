@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import background from "../assets/logo.svg";
+import logo from "../assets/logo.svg";
 import "../Styles/Login.css";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 
@@ -44,7 +44,7 @@ const Login = () => {
                     <Col md="6">
                         <figure className="bg1">
                             <figcaption>
-                                <img className="style-img" src={background} alt="logo" />
+                                <img className="style-img" src={logo} alt="logo" width={-20} />
                             </figcaption>
                         </figure>
                     </Col>
@@ -68,7 +68,7 @@ const Login = () => {
                                         <Col className="md-2">
                                             <Button id="btn-pass" onClick={handleBtnPass}>
                                                 {
-                                                    state ? <AiOutlineEyeInvisible /> : <AiOutlineEye />
+                                                    state ? <AiOutlineEye /> : <AiOutlineEyeInvisible />
                                                 }
                                             </Button>
                                         </Col>
