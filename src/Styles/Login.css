@@ -25,7 +25,7 @@ figure.bg1 {
     padding-top: 10px;
     padding-right: 10px;
     text-align: center;
- 
+
 
 }
 
@@ -33,7 +33,7 @@ figure.bg1 {
     width: 60%;
 }
 
-.bungkus_regis{
+.bungkus_regis {
     width: 720px;
     height: 100%;
 }
@@ -133,7 +133,7 @@ figure.bg1 {
 }
 
 .lupa-pass {
-    margin-left: 20%;
+    margin-left: 10%;
 }
 
 .login-body #button-masuk {

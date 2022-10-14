@@ -80,7 +80,7 @@ const Login = () => {
                                             <Form.Check type="checkbox" label="Rememeber me" />
                                         </Col>
                                         <Col>
-                                            <Link className="lupa-pass">Forgot Password</Link>
+                                            <Link className="lupa-pass">Forgot Password ?</Link>
                                         </Col>
                                     </Row>
                                 </Form.Group>
