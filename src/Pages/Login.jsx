@@ -51,7 +51,7 @@ const Login = () => {
                     <Col md="6">
                         <div className="d-flex justify-content-center login-body">
                             <Form onSubmit={handleSubmit}>
-                                <h3>Masuk</h3>
+                                <h3>Login</h3>
                                 <Form.Group className="mb-3" controlId="formInputUsername">
                                     <Form.Control type="text" placeholder="Username..."
                                         value={username}
@@ -77,28 +77,28 @@ const Login = () => {
                                 <Form.Group className="mb-3" controlId="formCheckbox">
                                     <Row>
                                         <Col>
-                                            <Form.Check type="checkbox" label="Ingat Saya" />
+                                            <Form.Check type="checkbox" label="Rememeber me" />
                                         </Col>
                                         <Col>
-                                            <Link className="lupa-pass">Lupa Password ?</Link>
+                                            <Link className="lupa-pass">Forgot Password</Link>
                                         </Col>
                                     </Row>
                                 </Form.Group>
                                 <Button id="button-masuk" type="submit">
                                     Login
                                 </Button>
-                                <p className="text-login"><b><center>Atau</center></b></p>
+                                <p className="text-login"><b><center>Or</center></b></p>
                                 <Button className="btn-google" type="submit">
                                     <img
                                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/768px-Google_%22G%22_Logo.svg.png"
                                         alt=""
                                         width={20}
                                     />
-                                    Masuk dengan Google
+                                    Continue with Google
                                 </Button>
                                 <p className="text-login">
                                     <center>
-                                        <b>Tidak punya akun? <Link to={"/regis"}>Daftar</Link>{" "}</b>
+                                        <b>Don't have account ? <Link to={"/regis"}>Sign'up</Link>{" "}</b>
                                     </center>
                                 </p>
                             </Form>

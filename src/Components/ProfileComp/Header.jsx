@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import "../../Styles/Profile.css"
-import Coba from "../../assets/img_profile/coba.jpeg"
+import Coba from "../../assets/img_profile/coba.jpg"
 import Course from "../../assets/course.png"
 import Start from "../../assets/start.png"
 const Header = () => {
@@ -13,8 +13,8 @@ const Header = () => {
             <img className="css-img" src={Coba} />
             </div>
             <div className='css-borderDesc'>
-               <h2>MISS SIRAMET</h2>
-               <h3>PENUNGGU KOLONG KASUR DAN KAMAR MANDI</h3>
+               <h2>M Rifki Nurul Ramdani Alamsyah</h2>
+               <h3>Front End Dev Intern</h3>
                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro earum nesciunt quod aut impedit eveniet alias sapiente numquam iusto praesentium eos vitae, totam ratione facilis voluptatibus! Voluptatum cumque vero fuga?</p>
             </div>
           </div>

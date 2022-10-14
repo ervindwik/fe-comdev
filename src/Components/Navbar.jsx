@@ -46,10 +46,10 @@ const NavbarComp = (props) => {
                         <Nav.Link href="#action1">Langganan</Nav.Link>
                         <Nav.Link href="#action2">Lainya</Nav.Link>
 
-                        <Nav.Link href="#" className="btn btn-outline-dark px-4">
+                        <Nav.Link href="/login" className="btn btn-outline-dark px-4">
                             Masuk
                         </Nav.Link>
-                        <Nav.Link href="#" className="btn oldGreen text-white px-4">
+                        <Nav.Link href="/regis" className="btn oldGreen text-white px-4">
                             Daftar
                         </Nav.Link>
                     </Nav>

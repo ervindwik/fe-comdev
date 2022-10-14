@@ -25,10 +25,17 @@ figure.bg1 {
     padding-top: 10px;
     padding-right: 10px;
     text-align: center;
+ 
+
 }
 
 .style-img {
     width: 60%;
+}
+
+.bungkus_regis{
+    width: 720px;
+    height: 100%;
 }
 
 
@@ -38,7 +45,7 @@ figure.bg1 {
 
     /* Desktop */
     .login-body {
-        margin-top: 100px;
+        margin-top: 80px;
     }
 
     figure.bg1 {
@@ -49,11 +56,13 @@ figure.bg1 {
         left: 0px;
         padding: 0;
         text-align: justify;
+        height: 625px;
     }
 
     .style-img {
         margin-top: 250px;
-        width: 80vh;
+        margin-left: 3rem;
+        width: 70vh;
     }
 
 }

@@ -7,7 +7,7 @@ import "../Styles/Login.css";
 const Regis = () => {
     return (
         <>
-            <Container>
+            <Container className="bungkus_regis">
             <Row className="d-flex justify-content-center align-items-center h-100">
                 <Col md="6">
                 <figure className="bg1">
@@ -20,7 +20,7 @@ const Regis = () => {
                 <Col md="6">
                 <div className="d-flex justify-content-center login-body">
                     <Form>
-                    <h3>Daftar</h3>
+                    <h3>Register</h3>
     
                     <Form.Group className="mb-3" controlId="formInput">
                         <Form.Control type="email" placeholder="Email..." />
@@ -54,7 +54,7 @@ const Regis = () => {
 
                     <p className="text-login">
                         <center>
-                            <b>Sudah ada akun? <Link to={"/login"}>Masuk</Link>{" "}</b>
+                            <b>Have account ? <Link to={"/login"}>Login</Link>{" "}</b>
                         </center>
                     </p>
                     </Form>
