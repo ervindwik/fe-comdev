@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../Components/Footer';
-import NavbarComp from '../Components/Navbar';
+import NavbarComp from '../Components/NavbarProfile';
 import "../Styles/Course.css";
 import { Container, Navbar, Nav, Col, Row } from "react-bootstrap";
 import gambar1 from '../assets/img-course.png'
