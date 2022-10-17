@@ -1,5 +1,5 @@
 import React from 'react';
-import NavbarComp from '../Components/Navbar';
+import NavbarComp from '../Components/NavbarProfile';
 import Header from '../Components/MyCourseComp/Header'
 import Line from '../Components/MyCourseComp/Line'
 import CoursesList from '../Components/MyCourseComp/CoursesList';

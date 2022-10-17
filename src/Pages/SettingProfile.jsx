@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Navbar, Nav, Form, Button, Col, Row } from "react-bootstrap";
 import Footer from "../Components/Footer";
-import NavbarProfile from "../Components/NavProfile";
+import NavbarProfile from "../Components/NavbarProfile";
 import "../Styles/SettingProfile.css";
 import profileImage from "../assets/user.png";
 import { useRef } from "react";

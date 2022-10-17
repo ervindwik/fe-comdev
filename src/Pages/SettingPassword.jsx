@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import { Container, Navbar, Nav, Form, Button, Col, Row } from "react-bootstrap";
 import Footer from "../Components/Footer";
-import NavbarComp from "../Components/Navbar";
+import NavbarComp from "../Components/NavbarProfile";
 import "../Styles/SettingProfile.css";
 
 const SettingPassword = () => {
