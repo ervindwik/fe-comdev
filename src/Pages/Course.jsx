@@ -72,23 +72,29 @@ const Course = () => {
 
                     <Row>
                         <h4>Top Kategori</h4>
-                        <Col xs={{ span: 12, order: 1 }} md={{ span: 4, order: 1 }}>
-                            <img alt='gambar1' src={gambar1} width={350} />
-                            <h5>Complete 2022 Web Development Bootcamp</h5>
-                            <h6>By: Ervin Dwi Kurniawan</h6>
-                            <img src={gambar2} width={200} /> <br />
-                            <span>Rp 150.000</span>
-                            <button type='submit' id='btn-course'>Belajar Sekarang</button>
+                        <Col xs={{ span: 12, order: 1 }} md={{ span: 3, order: 1 }}>
+                            <img alt='gambar1' src={gambar1} width={250} height={280} id="img-sec1" />
+                            <center><h5>Programming</h5></center>
                         </Col>
 
-                        <Col xs={{ span: 12, order: 2 }} md={{ span: 8, order: 2 }}>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                            <button type='submit'>Introduction</button>
+                        <Col xs={{ span: 12, order: 1 }} md={{ span: 3, order: 2 }}>
+                            <img alt='gambar1' src={gambar1} width={250} height={280} id="img-sec1" />
+                            <center><h5>Programming</h5></center>
+                        </Col>
+
+                        <Col xs={{ span: 12, order: 1 }} md={{ span: 3, order: 3 }}>
+                            <img alt='gambar1' src={gambar1} width={250} height={280} id="img-sec1" />
+                            <center><h5>Programming</h5></center>
+                        </Col>
+
+                        <Col xs={{ span: 12, order: 1 }} md={{ span: 3, order: 4 }}>
+                            <img alt='gambar1' src={gambar1} width={250} height={280} id="img-sec1" />
+                            <center><h5>Programming</h5></center>
                         </Col>
                     </Row>
 
                     <Row>
+                        <h4>Semua Course</h4>
                         <Col xs={{ span: 12, order: 1 }} md={{ span: 4, order: 1 }}>
                             <img alt='gambar1' src={gambar1} width={350} />
                             <h4>Complete 2022 Web Development Bootcamp</h4>
