@@ -98,7 +98,7 @@ const Login = () => {
                                 </Button>
                                 <p className="text-login">
                                     <center>
-                                        <b>Don't have account ? <Link to={"/regis"}>Sign'up</Link>{" "}</b>
+                                        <b>Don't have account ? <Link to={"/regis"}>Sign Up</Link>{" "}</b>
                                     </center>
                                 </p>
                             </Form>
