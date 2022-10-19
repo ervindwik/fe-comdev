@@ -8,6 +8,7 @@ import Course from "./Pages/Course";
 import MyCourse from "./Pages/MyCourse";
 import Login from "./Pages/Login";
 import Regis from "./Pages/Regis";
+import AddCourse from "./Pages/AddCourse";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path="/profile/mycourse" element={<MyCourse />} />
       <Route path="/login" element={<Login />} />
       <Route path="/regis" element={<Regis />} />
+      <Route path="/profile/mycourse/addcourse" element={<AddCourse />} />
     </Routes>
   );
 }

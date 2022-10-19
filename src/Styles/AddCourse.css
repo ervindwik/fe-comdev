@@ -1,0 +1,59 @@
+.header-add {
+    margin-top: 6%;
+}
+
+.line-style-2 {
+    background-color: #000;
+    color: #000;
+    border: none;
+    height: 2px;
+    margin-top: 1px;
+    margin-left: 110px;
+    margin-right: 120px;
+}
+
+.css-img-course {
+    width: 240px;
+    height: 200px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.btn.btn-primary.btn-upload-img {
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 0%;
+    border: none;
+    padding: 6px 12px;
+    background-color: #EFD100;
+    text-align: center;
+    width: 120px;
+    font-weight: bold;
+}
+
+.btn.btn-primary.btn-upload-img:hover {
+    background-color: #f7f03b;
+}
+
+.text-info-img {
+    margin-left: 10px;
+}
+
+.btn.btn-primary.btn-batal {
+    background-color: #a33413;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+    margin-left: 80%;
+    margin-right: 1.5%;
+}
+
+.btn.btn-primary.btn-submit:hover {
+    background-color: #5ac0c7;
+}
+
+.btn.btn-primary.btn-batal:hover {
+    background-color: #810404;
+}
