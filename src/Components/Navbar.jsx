@@ -10,6 +10,7 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 import Button from "react-bootstrap/esm/Button";
 import Form from "react-bootstrap/Form";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import {BsSearch} from "react-icons/bs"
 
 const NavbarComp = (props) => {
   let token = localStorage.getItem("token");
@@ -27,7 +28,7 @@ const NavbarComp = (props) => {
               aria-label="Search"
             />
             <Button type="submit" className="buttonSearch">
-              <img src={searchBar} alt="" width="30px" />
+            <BsSearch color="#000" size={'2rem'} style={{ 'paddingRight' : '10px' }} />
             </Button>
           </Form>
         </Navbar.Brand>
