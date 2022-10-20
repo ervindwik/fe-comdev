@@ -4,6 +4,7 @@ import gambar3 from "../../assets/dashboard-sec22.png";
 import gambar7 from "../../assets/rating.png";
 import add from "../../assets/add.png";
 import folder from "../../assets/folderIcon.png"
+import { Link } from "react-router-dom";
 const CoursesList = () => {
     return (
         <Container>
@@ -19,34 +20,34 @@ const CoursesList = () => {
                         <Card.Body>
                             <Card.Text>
                                 <div
-                                style={{ 
-                                    padding:"5px 5px 5px 5px",
-                                    borderWidth :'5',
-                                    borderStyle:'dashed',
-                                    textAlign:'center',
-                                    width:'5rem',
-                                    margin:'auto',
-                                    marginTop:"95px",
-                                    marginLeft:"60px",
-                                    opacity:'0.5',
-                                    borderRadius:'50%'
-                                 }}
+                                    style={{
+                                        padding: "5px 5px 5px 5px",
+                                        borderWidth: '5',
+                                        borderStyle: 'dashed',
+                                        textAlign: 'center',
+                                        width: '5rem',
+                                        margin: 'auto',
+                                        marginTop: "95px",
+                                        marginLeft: "60px",
+                                        opacity: '0.5',
+                                        borderRadius: '50%'
+                                    }}
                                 >
-                                    <a href="#">
-                                    <img src={add} width={40} style={{ 
-                                        paddingTop:"10px",
-                                        paddingBottom:"10px"
-                                     }} />
-                                    </a>
-                                 
+                                    <Link to="/profile/mycourse/addcourse">
+                                        <img src={add} width={40} style={{
+                                            paddingTop: "10px",
+                                            paddingBottom: "10px"
+                                        }} />
+                                    </Link>
+
                                 </div>
                                 <span>
-                                    <h2 className="text-center" style={{ 
-                                        opacity :'0.5',
-                                        marginBottom:'35px',
-                                        marginTop:'10px',
-                                        marginLeft:'40px'
-                                     }}>Add Course</h2>
+                                    <h2 className="text-center" style={{
+                                        opacity: '0.5',
+                                        marginBottom: '35px',
+                                        marginTop: '10px',
+                                        marginLeft: '40px'
+                                    }}>Add Course</h2>
                                 </span>
 
                             </Card.Text>
@@ -55,7 +56,7 @@ const CoursesList = () => {
                 </Col>
                 {/* end add course */}
                 <Col md={{ span: 3 }}>
-                    <Card style={{   width: "15rem", }} id="card-courses">
+                    <Card style={{ width: "15rem", }} id="card-courses">
                         <Card.Img variant="top" src={gambar3} />
                         <Card.Body>
                             <p class="mb-1 fw-bolder fs-5">Complete 2022 Web Development Bootcamp</p>
@@ -69,7 +70,7 @@ const CoursesList = () => {
                     </Card>
                 </Col>
                 <Col ma={{ span: 3 }}>
-                    <Card style={{   width: "15rem",}} id="card-courses">
+                    <Card style={{ width: "15rem", }} id="card-courses">
                         <Card.Img variant="top" src={gambar3} />
                         <Card.Body>
                             <p class="mb-1 fw-bolder fs-5">Complete 2022 Web Development Bootcamp</p>
@@ -83,7 +84,7 @@ const CoursesList = () => {
                     </Card>
                 </Col>
                 <Col md={{ span: 3 }}>
-                    <Card style={{   width: "15rem",}} id="card-courses">
+                    <Card style={{ width: "15rem", }} id="card-courses">
                         <Card.Img variant="top" src={gambar3} />
                         <Card.Body>
                             <p class="mb-1 fw-bolder fs-5">Complete 2022 Web Development Bootcamp</p>
@@ -97,7 +98,7 @@ const CoursesList = () => {
                     </Card>
                 </Col>
                 <Col md={{ span: 3 }}>
-                    <Card style={{   width: "15rem", }} id="card-courses">
+                    <Card style={{ width: "15rem", }} id="card-courses">
                         <Card.Img variant="top" src={gambar3} />
                         <Card.Body>
                             <p class="mb-1 fw-bolder fs-5">Complete 2022 Web Development Bootcamp</p>
@@ -111,7 +112,7 @@ const CoursesList = () => {
                     </Card>
                 </Col>
                 <Col md={{ span: 3 }}>
-                    <Card style={{    width: "15rem", }} id="card-courses">
+                    <Card style={{ width: "15rem", }} id="card-courses">
                         <Card.Img variant="top" src={gambar3} />
                         <Card.Body>
                             <p class="mb-1 fw-bolder fs-5">Complete 2022 Web Development Bootcamp</p>

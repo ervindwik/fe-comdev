@@ -16,8 +16,13 @@
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
     "react-icon": "^1.0.0",
+<<<<<<< HEAD
     "react-icons": "^4.6.0",
     "react-pro-sidebar": "^1.0.0-alpha.6",
+=======
+    "react-icons": "^4.4.0",
+    "react-image-crop": "^10.0.8",
+>>>>>>> 4bc44bff2e373f2b563be7f46cc7d497d0d02e06
     "react-router-dom": "^6.4.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"

@@ -3,10 +3,13 @@
     margin-top: 8%;
 }
 
+<<<<<<< HEAD
 p {
     margin-top: 1%;
 }
 
+=======
+>>>>>>> 4bc44bff2e373f2b563be7f46cc7d497d0d02e06
 #line-course {
     border: none;
     background-color: #000;
@@ -27,10 +30,11 @@ p {
     margin-left: 80px; */
 }
 
-.body-course h4 {
+.body-course h5 {
     font-weight: bold;
-    margin-top: 3%;
-    width: 300px;
+    font-size: medium;
+    margin-top: auto;
+    width: 250px;
 }
 
 #btn-course {
@@ -45,14 +49,22 @@ p {
     margin-bottom: 10%;
 }
 
-.body-course h6 {
-    color: #B1B1B1;
-    font-size: 14px;
-    font-weight: 700;
+#img-sec1 {
+    margin-bottom: 3%;
+    border-radius: 7px;
 }
 
-.body-course span {
-    font-weight: bold;
-    font-size: 17px;
-    margin-left: 42%;
+.body-course h6 {
+    color: #B1B1B1;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: auto;
+    margin-bottom: -2px;
+}
+
+.body-course h4 {
+    font-size: larger;
+    font-weight: 700;
+    margin-top: 2%;
+    margin-bottom: 1.5%;
 }
