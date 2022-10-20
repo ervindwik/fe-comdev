@@ -2,6 +2,7 @@ import React, { Component, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import { Sidebar, Menu, MenuItem, useProSidebar } from 'react-pro-sidebar';
 import {BsTrash , BsFillPencilFill} from "react-icons/bs";
+import {AiOutlineArrowRight} from "react-icons/ai";
 
 import '../../Styles/CourseDetailPreview.css'
 
@@ -19,8 +20,8 @@ const CourseDetail = () => {
     )
 
     return (
-    <Container className="d-flex">
-        <Sidebar width='30%'>
+    <Container className="course-modul">
+        <Sidebar width ="300px">
           <Menu>
           <MenuItem style={{'pointerEvents' : 'none'}}> <h2>Daftar Modul</h2></MenuItem>
           <ol className='list-modul'>
@@ -40,6 +41,7 @@ const CourseDetail = () => {
             <p>{modul.pengenalan.body}</p>
             <center><img src='/logo192.png' alt="" className='mt-3 mb-3'/></center>
             <p>{modul.pengenalan.body}</p>
+            <button className='float-end mb-4 btn btn-warning fw-bolder'>Selanjutnya <AiOutlineArrowRight /> </button>
         </section>
 
        
