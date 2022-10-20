@@ -6,7 +6,7 @@
 
 .searchBar{
     flex-grow:2;
-    width: 165px !important;
+    width: 130px !important;
     /* And hide the input's outline, so the form looks like the outline */
     border:none !important;
 }
@@ -23,8 +23,7 @@
     /* This bit sets up the horizontal layout */
     display:flex;
     flex-direction:row;
-    margin-left: -8px;
-    
+    margin: 0;
     /* This bit draws the box around it */
     border:1px solid grey;
     border-radius: 15px;
@@ -56,11 +55,11 @@
   }
   @media (min-width: 1024px) {
     .searchBar{
-      width: 400px !important;
+      width: 250px !important;
     }
 
     .form{
-      margin-left: 0;
+      margin-left: 5px;
     }
     .logo{
       width: 5.5%;
