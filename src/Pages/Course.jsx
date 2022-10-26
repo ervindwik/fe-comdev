@@ -1,6 +1,7 @@
 import { React, useState } from 'react';
 import Footer from '../Components/Footer';
 import NavbarComp from '../Components/NavbarProfile';
+import CarouselComp from '../Components/CourseComp/Carousel';
 import "../Styles/Course.css";
 import { Container, Navbar, Nav, Col, Row } from "react-bootstrap";
 import gambar1 from '../assets/img-course.png'
@@ -95,7 +96,7 @@ const Course = () => {
 
                     <Row>
                         <h4>Semua Course</h4>
-                        <Col xs={{ span: 12, order: 1 }} md={{ span: 4, order: 1 }}>
+                        {/* <Col xs={{ span: 12, order: 1 }} md={{ span: 4, order: 1 }}>
                             <img alt='gambar1' src={gambar1} width={350} />
                             <h4>Complete 2022 Web Development Bootcamp</h4>
                             <h6>By: Ervin Dwi Kurniawan</h6>
@@ -108,11 +109,12 @@ const Course = () => {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                             <button type='submit'>Introduction</button>
-                        </Col>
+                        </Col> */}
                     </Row>
                 </div>
             </Container>
             
+            <CarouselComp />
 
             <Footer />
         </>
