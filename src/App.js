@@ -10,6 +10,7 @@ import Login from "./Pages/Login";
 import Regis from "./Pages/Regis";
 import CourseDetailPreview from "./Pages/CourseDetailPreview";
 import AddCourse from "./Pages/AddCourse";
+import AddModul from "./Pages/AddModul";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/regis" element={<Regis />} />
       <Route path="/profile/mycourse/addcourse" element={<AddCourse />} />
+      <Route path="/profile/mycourse/addmodul" element={<AddModul />} />
     </Routes>
   );
 }
