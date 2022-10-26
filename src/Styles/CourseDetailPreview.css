@@ -1,0 +1,59 @@
+.navigasi > .navbar > .navbar-nav > .nav-item > .nav-link{
+    width: 150px;
+}
+
+
+.description{
+    text-align:justify;
+    display:none;
+  }
+  
+  .description:target{
+    display:block;
+  }
+
+
+  .list-modul {
+    font-size: large;
+    margin: 5px 5px 5px 5px;
+  }
+
+  .list-modul >  li{
+    margin-top: 10px ;
+  }
+
+  .sidebar{
+    border: .5px solid black !important;
+    height: 100%;
+    padding: 5px 5px 5px 5px;
+   
+  }
+
+  .list-modul >  li > a{
+  color: #000;
+  }
+
+  .the-modul {
+    margin-top: 15px;
+    border:  1px black solid;
+    width: 103.5%;
+    padding: 5px 5px 5px 5px;
+  }
+
+  
+  @media (min-width: 1024px) {
+    .course-modul{
+      display: flex;
+    }
+
+    .the-modul {
+      margin-left: 15px;
+      margin-top: 0;
+      border:  1px black solid;
+      width: 100%;
+     
+      padding: 5px 5px 5px 5px;
+    }
+  
+  
+  }
