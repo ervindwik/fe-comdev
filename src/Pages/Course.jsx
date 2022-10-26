@@ -37,39 +37,7 @@ const Course = () => {
                 <div className='body-course'>
                     <hr id='line-course' />
 
-                    <Row>
-                        <Col xs={{ span: 12, order: 1 }} md={{ span: 3, order: 1 }}>
-                            <img alt='gambar1' src={gambar1} width={250} id="img-sec1" />
-                            <h5>Complete 2022 Web Development Bootcamp</h5>
-                            <h6>Ervin Dwi Kurniawan</h6>
-                            <img src={gambar2} width={130} /> <br />
-                            <h5>Rp 300.000</h5>
-                        </Col>
-
-                        <Col xs={{ span: 12, order: 2 }} md={{ span: 3, order: 2 }} >
-                            <img alt='gambar1' src={gambar1} width={250} id="img-sec1" />
-                            <h5>Complete 2022 Web Development Bootcamp</h5>
-                            <h6>Ervin Dwi Kurniawan</h6>
-                            <img src={gambar2} width={130} /> <br />
-                            <h5>Rp 300.000</h5>
-                        </Col>
-
-                        <Col xs={{ span: 12, order: 3 }} md={{ span: 3, order: 3 }}>
-                            <img alt='gambar1' src={gambar1} width={250} id="img-sec1" />
-                            <h5>Complete 2022 Web Development Bootcamp</h5>
-                            <h6>Ervin Dwi Kurniawan</h6>
-                            <img src={gambar2} width={130} /> <br />
-                            <h5>Rp 300.000</h5>
-                        </Col>
-
-                        <Col xs={{ span: 12, order: 4 }} md={{ span: 3, order: 4 }}>
-                            <img alt='gambar1' src={gambar1} width={250} id="img-sec1" />
-                            <h5>Complete 2022 Web Development Bootcamp</h5>
-                            <h6>Ervin Dwi Kurniawan</h6>
-                            <img src={gambar2} width={130} /> <br />
-                            <h5>Rp 300.000</h5>
-                        </Col>
-                    </Row>
+                    <CarouselComp />
 
                     <Row>
                         <h4>Top Kategori</h4>
@@ -96,25 +64,9 @@ const Course = () => {
 
                     <Row>
                         <h4>Semua Course</h4>
-                        {/* <Col xs={{ span: 12, order: 1 }} md={{ span: 4, order: 1 }}>
-                            <img alt='gambar1' src={gambar1} width={350} />
-                            <h4>Complete 2022 Web Development Bootcamp</h4>
-                            <h6>By: Ervin Dwi Kurniawan</h6>
-                            <img src={gambar2} width={200} /> <br />
-                            <img src={gambar3} width={15} /> 10 Modul <span>Rp 150.000</span>
-                            <button type='submit' id='btn-course'>Belajar Sekarang</button>
-                        </Col>
-
-                        <Col xs={{ span: 12, order: 2 }} md={{ span: 8, order: 2 }}>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                            <button type='submit'>Introduction</button>
-                        </Col> */}
                     </Row>
                 </div>
             </Container>
-            
-            <CarouselComp />
 
             <Footer />
         </>
