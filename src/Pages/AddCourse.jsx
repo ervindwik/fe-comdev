@@ -3,7 +3,7 @@ import { Container, Form, Button, Row, Col } from "react-bootstrap";
 import Footer from "../Components/Footer";
 import NavbarProfile from "../Components/NavbarProfile";
 import "../Styles/AddCourse.css";
-import imgCourse from "../assets/img-course.png";
+import imgCourse from "../assets/course-img.png";
 import ReactCrop from "react-image-crop";
 import "react-image-crop/dist/ReactCrop.css";
 
