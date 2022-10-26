@@ -1,9 +1,9 @@
 import React from 'react';
 import "../../Styles/Course.css";
-import { Container, Navbar, Nav, Col, Row } from "react-bootstrap";
+import { Container, Col, Row } from "react-bootstrap";
 import gambar1 from '../../assets/img-course.png'
 import gambar2 from '../../assets/rating.png'
-import gambar3 from '../../assets/folderIcon.png'
+import Pagination from 'react-bootstrap/Pagination';
 
 const DetailCourse = () => {
     return (
@@ -103,6 +103,24 @@ const DetailCourse = () => {
                             <h4 id="price">Rp 300.000</h4>
                         </Col>
                     </Row>
+
+                    <Pagination id="numbering">
+                        <Pagination.First />
+                        <Pagination.Prev />
+                        <Pagination.Item active>{1}</Pagination.Item>
+                        <Pagination.Ellipsis />
+
+                        <Pagination.Item>{10}</Pagination.Item>
+                        <Pagination.Item>{11}</Pagination.Item>
+                        <Pagination.Item>{12}</Pagination.Item>
+                        <Pagination.Item>{13}</Pagination.Item>
+                        <Pagination.Item>{14}</Pagination.Item>
+
+                        <Pagination.Ellipsis />
+                        <Pagination.Item>{20}</Pagination.Item>
+                        <Pagination.Next />
+                        <Pagination.Last />
+                    </Pagination>
             </Container>
         </>
 
