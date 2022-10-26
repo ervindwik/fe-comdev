@@ -1,10 +1,9 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Navbar, Nav, Col, Row } from "react-bootstrap";
+import { Container, Col, Row } from "react-bootstrap";
 import gambar1 from '../../assets/img-course.png'
 import gambar2 from '../../assets/rating.png'
-import image2 from '../../assets/img-course.png'
 
 function Slider() {
   return (

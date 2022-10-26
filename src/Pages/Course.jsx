@@ -2,11 +2,10 @@ import { React, useState } from 'react';
 import Footer from '../Components/Footer';
 import NavbarComp from '../Components/NavbarProfile';
 import CarouselComp from '../Components/CourseComp/Carousel';
+import DetailCourse from '../Components/CourseComp/DetailCourse';
 import "../Styles/Course.css";
 import { Container, Navbar, Nav, Col, Row } from "react-bootstrap";
 import gambar1 from '../assets/img-course.png'
-import gambar2 from '../assets/rating.png'
-import gambar3 from '../assets/folderIcon.png'
 
 const Course = () => {
     const [active, setActive] = useState('default');
@@ -64,6 +63,8 @@ const Course = () => {
 
                     <Row>
                         <h4>Semua Course</h4>
+
+                        <DetailCourse />
                     </Row>
                 </div>
             </Container>
