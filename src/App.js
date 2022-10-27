@@ -33,7 +33,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/regis" element={<Regis />} />
         <Route path="/profile/mycourse/addcourse" element={<AddCourse />} />
-      <Route path="/profile/mycourse/addmodul" element={<AddModul />} />
+        <Route path="/profile/mycourse/addmodul" element={<AddModul />} />
         <Route path="/profile/mycourse/addcourse" element={<AddCourse />} />
       </Routes>
       <SidebarAdmin>
@@ -48,6 +48,6 @@ function App() {
         </Routes>
       </SidebarAdmin>
     </>
-  )
-
+  );
+}
 export default App;
