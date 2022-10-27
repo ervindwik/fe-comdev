@@ -77,3 +77,23 @@ p {
 #numbering {
     margin-left: 28%;
 }
+
+#action-profile {
+    width: max-content;
+}
+
+#action-password {
+    width: max-content;
+}
+
+.nav-course h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+
+#detail-text {
+    margin-left: 1%;
+    width: 50%;
+}

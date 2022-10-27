@@ -11,6 +11,7 @@ import Regis from "./Pages/Regis";
 import CourseDetailPreview from "./Pages/CourseDetailPreview";
 import AddCourse from "./Pages/AddCourse";
 import AddModul from "./Pages/AddModul";
+import CourseDetail from "./Pages/CourseDetail";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         path="/course/coursedetailpreview"
         element={<CourseDetailPreview />}
       />
+      <Route path="/coursedetail" element={<CourseDetail />} />
       <Route path="/profile/mycourse" element={<MyCourse />} />
       <Route path="/login" element={<Login />} />
       <Route path="/regis" element={<Regis />} />
