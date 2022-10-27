@@ -79,10 +79,9 @@ const Header = () => {
                     </Nav>
                 </Navbar>
             </div>
-
+            
             <div className="course-info container">
-                <h2 style={{ marginTop: "5px" }}> </h2>
-                <div id="web" className="description">
+                <div id="web" className="description" style={{'paddingTop':'200px', 'marginTop':'-200px' }}>
                     <Row>
                         <h3>{category.webdev.title}</h3>
                         <Col md="10">
@@ -98,7 +97,7 @@ const Header = () => {
                         </Col>
                     </Row>
                 </div>
-                <div id="frontend" className="description">
+                <div id="frontend" className="description" style={{'paddingTop':'200px', 'marginTop':'-200px' }}>
                     <Row>
                         <h3>{category.frontend.title}</h3>
                         <Col md="10">
@@ -114,7 +113,7 @@ const Header = () => {
                         </Col>
                     </Row>
                 </div>
-                <div id="backend" className="description">
+                <div id="backend" className="description" style={{'paddingTop':'200px', 'marginTop':'-200px' }}>
                     <Row>
                         <h3>{category.backend.title}</h3>
                         <Col md="10">
@@ -130,7 +129,7 @@ const Header = () => {
                         </Col>
                     </Row>
                 </div>
-                <div id="mobile" className="description">
+                <div id="mobile" className="description" style={{'paddingTop':'200px', 'marginTop':'-200px' }}>
                     <Row>
                         <h3>{category.mobile.title}</h3>
                         <Col md="10">
@@ -146,7 +145,7 @@ const Header = () => {
                         </Col>
                     </Row>
                 </div>
-                <div id="ui" className="description">
+                <div id="ui" className="description" style={{'paddingTop':'200px', 'marginTop':'-200px' }}>
                     <Row>
                         <h3>{category.ui.title}</h3>
                         <Col md="10">
