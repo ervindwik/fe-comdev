@@ -14,6 +14,8 @@ import Home from "./Pages/Admin/Home";
 import User from "./Pages/Admin/User";
 import Pengajar from "./Pages/Admin/Pengajar";
 import CourseAdmin from "./Pages/Admin/Course";
+import AddModul from "./Pages/AddModul";
+import AddCourse from "./Pages/AddCourse";
 import PublishCourse from "./Pages/Admin/PublishCourse";
 import SidebarAdmin from "./Components/AdminComp/Sidebar";
 function App() {
@@ -34,7 +36,6 @@ function App() {
         <Route path="/regis" element={<Regis />} />
         <Route path="/profile/mycourse/addcourse" element={<AddCourse />} />
         <Route path="/profile/mycourse/addmodul" element={<AddModul />} />
-        <Route path="/profile/mycourse/addcourse" element={<AddCourse />} />
       </Routes>
       <SidebarAdmin>
         <Routes>
