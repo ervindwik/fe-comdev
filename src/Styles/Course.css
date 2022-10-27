@@ -3,9 +3,13 @@
     margin-top: 8%;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 166e6fad7139465caf65dd1c608684f54dbc94e3
 p {
-    margin-top: 1%;
+    font-size: 14px;
+    margin: auto;
 }
 
 #line-course {
@@ -41,10 +45,11 @@ p {
     border-style: none;
     border-radius: 3px;
     font-weight: bold;
-    width: 350px;
+    width: 170px;
     height: 2.5em;
     margin-top: 4%;
     margin-bottom: 10%;
+    margin-left: 2%;
 }
 
 #img-sec1 {
@@ -56,8 +61,8 @@ p {
     color: #B1B1B1;
     font-size: 13px;
     font-weight: 700;
-    margin-top: auto;
-    margin-bottom: -2px;
+    margin-top: 4px;
+    margin-bottom: auto;
 }
 
 .body-course h4 {
@@ -65,4 +70,34 @@ p {
     font-weight: 700;
     margin-top: 2%;
     margin-bottom: 1.5%;
+}
+
+#price {
+    margin-left: 30%;
+    margin-top: 5%;
+    font-size: 18px;
+}
+
+#numbering {
+    margin-left: 28%;
+}
+
+#action-profile {
+    width: max-content;
+}
+
+#action-password {
+    width: max-content;
+}
+
+.nav-course h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+
+#detail-text {
+    margin-left: 1%;
+    width: 50%;
 }

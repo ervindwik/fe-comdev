@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#carousel-section .carousel-control-prev .carousel-control-prev-icon {
+  border-radius: 100%;
+  border: 1px solid #000;
+  background-size: 50% 50%;
+}
+
+#carousel-section .carousel-control-prev .carousel-control-prev-icon:hover {
+  background-color: #000;
+  border: 0;
+}
+
+#carousel-section .carousel-control-next .carousel-control-next-icon {
+  border-radius: 100%;
+  border: 1px solid #000;
+  background-size: 50% 50%;
+}
+
+#carousel-section .carousel-control-next .carousel-control-next-icon:hover {
+  background-color: #000;
+  border: 0;
+}
