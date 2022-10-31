@@ -14,6 +14,7 @@ import User from "./Pages/Admin/User";
 import Pengajar from "./Pages/Admin/Pengajar";
 import CourseAdmin from "./Pages/Admin/Course";
 import AddModul from "./Pages/AddModul";
+import AddCourse from "./Pages/AddCourse";
 import PublishCourse from "./Pages/Admin/PublishCourse";
 import SidebarAdmin from "./Components/AdminComp/Sidebar";
 function App() {
