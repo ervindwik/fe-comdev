@@ -2,12 +2,12 @@ import React from "react";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import background from "../assets/logo.svg";
-import "../Styles/Login.css";
+import "../Styles/Regis.css";
 
 const Regis = () => {
     return (
         <>
-            <Container className="bungkus_regis">
+            <Container>
             <Row className="d-flex justify-content-center align-items-center h-100">
                 <Col md="6">
                 <figure className="bg1">
@@ -18,7 +18,7 @@ const Regis = () => {
                 </Col>
     
                 <Col md="6">
-                <div className="d-flex justify-content-center login-body">
+                <div className="d-flex justify-content-center regis-body" id="regis-section">
                     <Form>
                     <h3>Register</h3>
     
@@ -52,7 +52,7 @@ const Regis = () => {
                         Sign Up
                     </Button>
 
-                    <p className="text-login">
+                    <p className="text-regis2">
                         <center>
                             <b>Have account ? <Link to={"/login"}>Login</Link>{" "}</b>
                         </center>
