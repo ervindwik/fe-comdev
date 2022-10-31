@@ -3,6 +3,7 @@ import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import background from "../assets/logo.svg";
 import "../Styles/Regis.css";
+import axios from "axios";
 
 const Regis = () => {
     return (

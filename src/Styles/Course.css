@@ -3,10 +3,6 @@
     margin-top: 8%;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 166e6fad7139465caf65dd1c608684f54dbc94e3
 p {
     font-size: 14px;
     margin: auto;
@@ -47,7 +43,7 @@ p {
     font-weight: bold;
     width: 170px;
     height: 2.5em;
-    margin-top: 4%;
+    margin-top: 2%;
     margin-bottom: 10%;
     margin-left: 2%;
 }
@@ -93,7 +89,7 @@ p {
 .nav-course h4 {
     font-size: 22px;
     font-weight: 700;
-    margin-bottom: 1%;
+    /* margin-bottom: 1%; */
     margin-left: 1%;
 }
 
