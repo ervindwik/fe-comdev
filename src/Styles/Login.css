@@ -5,8 +5,8 @@
     margin: 0;
 }
 
-.text-login {
-    margin-left: 38px;
+.text-or {
+    text-align: center;
 }
 
 .text-regis {
@@ -25,8 +25,6 @@ figure.bg1 {
     padding-top: 10px;
     padding-right: 10px;
     text-align: center;
-
-
 }
 
 .style-img {
@@ -37,8 +35,6 @@ figure.bg1 {
     width: 720px;
     height: 100%;
 }
-
-
 
 
 @media (min-width: 992px) {
@@ -148,20 +144,15 @@ figure.bg1 {
     text-align: center;
 }
 
-.login-body .btn-google {
+.login-body #google-login {
     color: #000000;
     background-color: #ffffff;
     width: 328px;
     border-style: solid;
+    border-width: 2px;
     border-color: #000000;
     border-radius: 10px;
-    font-size: 18px;
     margin-bottom: 15px;
-}
-
-.btn-google img {
-    margin-right: 10px;
-    margin-bottom: 3px;
 }
 
 .btn-primary:not([disabled]):not(.disabled).active #button-masuk,
@@ -173,11 +164,11 @@ figure.bg1 {
     border-color: #ffffff !important;
 }
 
-.btn-primary:not([disabled]):not(.disabled).active .btn-google,
+/* .btn-primary:not([disabled]):not(.disabled).active .btn-google,
 .btn-primary:not([disabled]):not(.disabled):active .btn-google,
 .btn-primary:not([disabled]):not(.disabled).hover .btn-google,
 .btn-primary:not([disabled]):not(.disabled).btn-google:hover {
     color: #fff !important;
     background-color: #000 !important;
     border-color: #000 !important;
-}
+} */
