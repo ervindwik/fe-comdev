@@ -16,7 +16,10 @@ import CourseAdmin from "./Pages/Admin/Course";
 import AddModul from "./Pages/AddModul";
 import AddCourse from "./Pages/AddCourse";
 import PublishCourse from "./Pages/Admin/PublishCourse";
+import CourseDetail from "./Pages/CourseDetail";
 import SidebarAdmin from "./Components/AdminComp/Sidebar";
+
+
 function App() {
   let admin = localStorage.getItem("admin");
   return (
@@ -29,6 +32,10 @@ function App() {
       <Route
         path="/course/coursedetailpreview"
         element={<CourseDetailPreview />}
+      />
+      <Route
+        path="/course/coursedetail"
+        element={<CourseDetail />}
       />
       <Route path="/profile/mycourse" element={<MyCourse />} />
       <Route path="/login" element={<Login />} />
