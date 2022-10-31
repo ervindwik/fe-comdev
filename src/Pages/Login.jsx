@@ -1,10 +1,13 @@
-import { React, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { GoogleLogin, GoogleLogout } from "react-google-login";
+import { gapi } from "gapi-script";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
+import btnGoogle from "../assets/btn-google.png";
 import "../Styles/Login.css";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
-
+import { faBold } from "@fortawesome/free-solid-svg-icons";
 
 const Login = () => {
     const [state, setState] = useState(false);
@@ -15,7 +18,6 @@ const Login = () => {
     const handleBtnPass = () => {
         setState(prevState => !prevState);
     }
-
 
     const handleUsername = (e) => {
         const value = e.target.value
@@ -36,6 +38,33 @@ const Login = () => {
             password: password
         }
         console.log(dataUser)
+    }
+
+    // google login and logout
+    const clientId = "423260667106-t7b16v2h97leg890clqnkltdt20l8amt.apps.googleusercontent.com";
+    const [showLoginBtn, setShowLoginBtn] = useState(true);
+    const [showLogoutBtn, setShowLogoutBtn] = useState(false);
+
+    useEffect(() => {
+        gapi.load("client:auth2", () => {
+            gapi.auth2.init({ clientId: clientId })
+        })
+    }, [])
+
+    const onLoginSuccess = (res) => {
+        console.log('Login Success', res.profileObj);
+        setShowLoginBtn(false);
+        setShowLogoutBtn(true);
+    }
+
+    const onLoginFailure = (res) => {
+        console.log('Login Failed:', res);
+    }
+
+    const onSignoutSuccess = () => {
+        alert("Kamu berhasil logout");
+        setShowLoginBtn(true);
+        setShowLogoutBtn(false);
     }
     return (
         <>
@@ -87,15 +116,44 @@ const Login = () => {
                                 <Button id="button-masuk" type="submit">
                                     Login
                                 </Button>
-                                <p className="text-login"><b><center>Or</center></b></p>
-                                <Button className="btn-google" type="submit">
-                                    <img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/768px-Google_%22G%22_Logo.svg.png"
-                                        alt=""
-                                        width={20}
+                                <p className="text-or"><b>Or</b></p>
+                                <div id="google-login">
+                                    <GoogleLogin
+                                        clientId={clientId}
+                                        render={renderProps => (
+                                            <button onClick={renderProps.onClick}
+                                                disabled={renderProps.disabled}
+                                                style={{
+                                                    backgroundColor: "transparent",
+                                                    borderStyle: "none",
+                                                    padding: 4,
+                                                    marginLeft: -5,
+                                                    width: 330,
+                                                    fontSize: 17,
+                                                }}>
+                                                <img src={btnGoogle}
+                                                    style={{
+                                                        width: 20,
+                                                        marginRight: 10,
+                                                    }} ></img>
+
+                                                Continue With Google
+                                            </button>
+                                        )}
+                                        buttonText="Continue With Google"
+                                        onSuccess={onLoginSuccess}
+                                        onFailure={onLoginFailure}
+                                        cookiePolicy={'single_host_origin'}
                                     />
-                                    Continue with Google
-                                </Button>
+
+                                    {/* <GoogleLogout
+                                        clientId={clientId}
+                                        buttonText="Logout"
+                                        onLogoutSuccess={onSignoutSuccess}
+                                    >
+                                    </GoogleLogout> */}
+
+                                </div>
                                 <p className="text-login">
                                     <center>
                                         <b>Don't have account ? <Link to={"/regis"}>Sign Up</Link>{" "}</b>
@@ -105,7 +163,7 @@ const Login = () => {
                         </div>
                     </Col>
                 </Row>
-            </Container>
+            </Container >
         </>
     );
 };
