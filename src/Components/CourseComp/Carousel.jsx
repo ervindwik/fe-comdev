@@ -2,13 +2,14 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Col, Row } from "react-bootstrap";
-import gambar1 from '../../assets/img-course.png'
-import gambar2 from '../../assets/rating.png'
+import gambar1 from '../../assets/img-course.png';
+import gambar2 from '../../assets/rating.png';
+import "../../Styles/Course.css";
 
 function Slider() {
   return (
     <Carousel id="carousel-section">
-        <Carousel.Item interval={3000}>
+        <Carousel.Item interval={3000} id="slide">
             <Container>
                 <Row>
                     <Col xs={{ span: 12, order: 1 }} md={{ span: 3, order: 1 }}>
@@ -46,7 +47,7 @@ function Slider() {
             </Container>
         </Carousel.Item>
 
-        <Carousel.Item interval={3000}>
+        <Carousel.Item interval={3000} id="slide">
             <Container>
                 <Row>
                     <Col xs={{ span: 12, order: 1 }} md={{ span: 3, order: 1 }}>
